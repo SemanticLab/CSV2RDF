@@ -8,7 +8,7 @@ link_finder = re.compile('[^,]+')
 date_of_birth = URIRef("http://dbpedia.org/ontology/birthDate")
 instrument = URIRef("http://dbpedia.org/ontology/instrument")
 
-parent_of = URIRef("http://vocab.org/relationship/#parentOf")
+parent_of = URIRef("http://vocab.org/relationship/parentOf")
 mother_of = URIRef("http://dbpedia.org/ontology/mother")
 father_of = URIRef("http://dbpedia.org/ontology/father")
 child_of = URIRef("http://vocab.org/relationship/childOf")
