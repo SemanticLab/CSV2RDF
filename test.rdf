@@ -1,122 +1,147 @@
-@prefix ns1: <http://vocab.org/relationship/> .
+@prefix ns1: <http://dbpedia.org/ontology/> .
+@prefix ns2: <http://vocab.org/relationship/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://id.loc.gov/authorities/names/no2007086020> ns1:childOf "Estella Curtis Batiste",
+<http://id.loc.gov/authorities/names/no2007086020> ns1:birthDate "abt 1969" ;
+    ns1:instrument "Percussion (congas, djembe)" ;
+    ns2:childOf "Estella Curtis Batiste",
         "John Jeffrey Batiste" ;
-    ns1:parentOf "Damon Jr. (D.J.) Batiste",
+    ns2:parentOf "Damon Jr. (D.J.) Batiste",
         "Leileh Marie Batiste",
         "Nala Jean Batiste" ;
-    ns1:spouseOf "Johana Batiste" .
+    ns2:spouseOf "Johana Batiste" .
 
-<http://id.loc.gov/authorities/names/no2009105135> ns1:childOf "David Batiste" ;
-    ns1:siblingOf "Damon Batiste",
+<http://id.loc.gov/authorities/names/no2009105135> ns1:birthDate "1965-12-12" ;
+    ns1:instrument "Drums" ;
+    ns2:childOf "David Batiste" ;
+    ns2:siblingOf "Damon Batiste",
         "Jamal Batiste",
         "Ryan Batiste" .
 
-<http://id.loc.gov/authorities/names/no2010043071> ns1:childOf "Michael Batiste" ;
-    ns1:siblingOf "Michael Jr. (Lil Mike) Batiste" .
+<http://id.loc.gov/authorities/names/no2010043071> ns1:birthDate "1986-11-11" ;
+    ns1:instrument "Drums",
+        "Melodica",
+        "Piano",
+        "Vocals" ;
+    ns2:childOf "Michael Batiste" ;
+    ns2:siblingOf "Michael Jr. (Lil Mike) Batiste" .
 
-<http://id.loc.gov/authorities/names/no2011128050> ns1:childOf "Estella Curtis Batiste",
+<http://id.loc.gov/authorities/names/no2011128050> ns1:instrument "Keytar",
+        "Piano" ;
+    ns2:childOf "Estella Curtis Batiste",
         "John Jeffrey Batiste" ;
-    ns1:parentOf "Damon Batiste",
+    ns2:parentOf "Damon Batiste",
         "David Russell Jr. (Russell) Batiste" ;
-    ns1:siblingOf "Damon Batiste",
+    ns2:siblingOf "Damon Batiste",
         "Michael Batiste",
         "Paul Batiste",
         "Peter Batiste" .
 
-<http://id.loc.gov/authorities/names/no99007541> ns1:childOf "Feliciana Mary Jolivette Batiste",
+<http://id.loc.gov/authorities/names/no99007541> ns1:birthDate "1934-09-05" ;
+    ns1:instrument "Trumpet" ;
+    ns2:childOf "Feliciana Mary Jolivette Batiste",
         "Milton Sr. Batiste" ;
-    ns1:siblingOf "Marlene Batiste",
+    ns2:siblingOf "Marlene Batiste",
         "Martha Batiste",
         "Mary Batiste",
         "Maurice Scipio Batiste",
         "Merial Batiste",
         "Miriam Batiste" .
 
-<https://musicbrainz.org/artist/32d4b375-1adc-4a75-b6c7-560f5922dcde> ns1:childOf "Alsam/Willie Battiste",
+<https://musicbrainz.org/artist/32d4b375-1adc-4a75-b6c7-560f5922dcde> ns1:birthDate "1929-1-15" ;
+    ns1:deathDate "2005-7-7" ;
+    ns2:childOf "Alsam/Willie Battiste",
         "Hazel Battiste" ;
-    ns1:siblingOf "Lloyd Battiste",
+    ns2:siblingOf "Lloyd Battiste",
         "Warren Battiste",
         "Westley Battiste" .
 
-<https://musicbrainz.org/artist/76be3c27-b3fe-4a06-a76d-96f79663195b> ns1:spouseOf <https://www.wikidata.org/wiki/Q367071> .
+<https://musicbrainz.org/artist/76be3c27-b3fe-4a06-a76d-96f79663195b> ns1:birthDate "1934-02-05" ;
+    ns1:instrument "Vocals" ;
+    ns2:spouseOf <https://www.wikidata.org/wiki/Q367071> .
 
-<https://www.discogs.com/artist/1239283-Paul-Batiste> ns1:childOf "Estella Curtis Batiste",
+<https://www.discogs.com/artist/1239283-Paul-Batiste> ns1:instrument "Electric Guitar" ;
+    ns2:childOf "Estella Curtis Batiste",
         "John Jeffrey Batiste" ;
-    ns1:parentOf "Travis Batiste" ;
-    ns1:siblingOf "Damon Batiste",
+    ns2:parentOf "Travis Batiste" ;
+    ns2:siblingOf "Damon Batiste",
         "David Batiste",
         "Michael Batiste",
         "Peter Batiste" .
 
-<https://www.discogs.com/artist/5191482-Michael-Batiste> ns1:childOf "Estella Curtis Batiste",
+<https://www.discogs.com/artist/5191482-Michael-Batiste> ns1:instrument "Bass Guitar" ;
+    ns2:childOf "Estella Curtis Batiste",
         "John Jeffrey Batiste" ;
-    ns1:parentOf <https://www.wikidata.org/wiki/Q6272528> ;
-    ns1:siblingOf "Damon Batiste",
+    ns2:parentOf <https://www.wikidata.org/wiki/Q6272528> ;
+    ns2:siblingOf "Damon Batiste",
         "David Batiste",
         "Paul Batiste",
         "Peter Batiste" .
 
-<https://www.discogs.com/artist/5191485-Peter-Batiste> ns1:childOf "Estella Curtis Batiste",
+<https://www.discogs.com/artist/5191485-Peter-Batiste> ns1:instrument "Vocals" ;
+    ns2:childOf "Estella Curtis Batiste",
         "John Jeffrey Batiste" ;
-    ns1:siblingOf "Damon Batiste",
+    ns2:siblingOf "Damon Batiste",
         "David Batiste",
         "Michael Batiste",
         "Paul Batiste" .
 
-<https://www.wikidata.org/wiki/Q1327228> ns1:childOf "Harold Sr. Battiste",
+<https://www.wikidata.org/wiki/Q1327228> ns1:birthDate "1931-10-28" ;
+    ns1:deathDate "2015-06-19" ;
+    ns2:childOf "Harold Sr. Battiste",
         "Pearl WIlmer Booker Battiste" .
 
 "" <http://cedric.cnam.fr/isid/ontologies/PersonLink.owl#3.1.2.1> "Harold Sr. Battiste",
         "Pearl Wilmer Booker Battiste" .
 
-"Alsam/WIllie Battiste" ns1:parentOf "Earl Battiste",
+"Alsam/WIllie Battiste" ns1:birthDate "abt 1904" ;
+    ns2:parentOf "Earl Battiste",
         "Lloyd Battiste",
         "Warren Battiste",
         "Westley Battiste" ;
-    ns1:spouseOf "Hazel Battiste" .
+    ns2:spouseOf "Hazel Battiste" .
 
-"Damon Jr. Batiste" ns1:childOf "Damon Batiste",
+"Damon Jr. Batiste" ns2:childOf "Damon Batiste",
         "Johana Batiste" .
 
-"Hazel Batiste" ns1:parentOf "Lloyd Battiste",
+"Hazel Batiste" ns2:parentOf "Lloyd Battiste",
         "Westley Battiste" .
 
-"Karen Batiste Williams" ns1:childOf <https://www.wikidata.org/wiki/Q1341386> ;
-    ns1:siblingOf "Erica Batiste",
+"Karen Batiste Williams" ns2:childOf <https://www.wikidata.org/wiki/Q1341386> ;
+    ns2:siblingOf "Erica Batiste",
         "Lionel Paul Jr. Batiste",
         "Loretta B. Smith",
         "Malika Batiste",
         "Tanya Batiste",
         "Vanessa B. Laurent" .
 
-"Loretta Batiste Smith" ns1:childOf <https://www.wikidata.org/wiki/Q1341386> ;
-    ns1:siblingOf "Erica Batiste",
+"Loretta Batiste Smith" ns2:childOf <https://www.wikidata.org/wiki/Q1341386> ;
+    ns2:siblingOf "Erica Batiste",
         "Karen B. Williams",
         "Lionel Paul Jr. Batiste",
         "Malika Batiste",
         "Tanya Batiste",
         "Vanessa B. Laurent" .
 
-"Michael Jr. Batiste" ns1:childOf "Michael Batiste" ;
-    ns1:siblingOf <https://www.wikidata.org/wiki/Q6272528> .
+"Michael Jr. Batiste" ns2:childOf "Michael Batiste" ;
+    ns2:siblingOf <https://www.wikidata.org/wiki/Q6272528> .
 
-"Peter Jr. Batiste" ns1:childOf "Peter Batiste" ;
-    ns1:siblingOf "Quanna Batiste" .
+"Peter Jr. Batiste" ns2:childOf "Peter Batiste" ;
+    ns2:siblingOf "Quanna Batiste" .
 
-"Vanessa Batiste Laurent" ns1:childOf <https://www.wikidata.org/wiki/Q1341386> ;
-    ns1:siblingOf "Erica Batiste",
+"Vanessa Batiste Laurent" ns2:childOf <https://www.wikidata.org/wiki/Q1341386> ;
+    ns2:siblingOf "Erica Batiste",
         "Karen B. Williams",
         "Lionel Paul Jr. Batiste",
         "Loretta B. Smith",
         "Malika Batiste",
         "Tanya Batiste" .
 
-"Walter Louis Batiste" ns1:parentOf <https://www.wikidata.org/wiki/Q1341386>,
+"Walter Louis Batiste" ns1:birthDate "1889-09-17" ;
+    ns2:parentOf <https://www.wikidata.org/wiki/Q1341386>,
         "Alma Batiste",
         "Arthur Batiste",
         "Corinne Batiste",
@@ -124,194 +149,221 @@
         "Henry Batiste",
         "Miriam Batiste",
         "Norman Batiste" ;
-    ns1:spouseOf "Irma Batiste" .
+    ns2:spouseOf "Irma Batiste" .
 
-"Warren Joseph Battiste" ns1:childOf "Alsam/Willie Battiste",
+"Warren Joseph Battiste" ns1:birthDate "1925-11-8" ;
+    ns2:childOf "Alsam/Willie Battiste",
         "Hazel Battiste" ;
-    ns1:siblingOf "Earl Battiste",
+    ns2:siblingOf "Earl Battiste",
         "Lloyd Battiste",
         "Westley Battiste" .
 
-"Joseph Charles Jolivette" ns1:parentOf "Feliciana Mary Jolivette Batiste" .
+"Joseph Charles Jolivette" ns2:parentOf "Feliciana Mary Jolivette Batiste" .
 
-"Quanna Batiste" ns1:childOf "Peter Batiste" ;
-    ns1:siblingOf "Peter Jr. (Peter Rabbit) Batiste" .
+"Quanna Batiste" ns2:childOf "Peter Batiste" ;
+    ns2:siblingOf "Peter Jr. (Peter Rabbit) Batiste" .
 
-"Travis Batiste" ns1:childOf "Paul Batiste" .
+"Travis Batiste" ns2:childOf "Paul Batiste" .
 
-"Virginia Edwards" ns1:parentOf "Feliciana Mary Jolivette Batiste" .
+"Virginia Edwards" ns1:birthDate "abt 1883" ;
+    ns2:parentOf "Feliciana Mary Jolivette Batiste" .
 
-"Carrie Battiste" ns1:childOf "Eugene Baptiste" ;
-    ns1:parentOf "Alvin Battiste" ;
-    ns1:siblingOf "Courie Battiste",
+"Carrie Battiste" ns1:deathDate "abt 1930" ;
+    ns2:childOf "Eugene Baptiste" ;
+    ns2:parentOf "Alvin Battiste" ;
+    ns2:siblingOf "Courie Battiste",
         "Harold Sr. Battiste" .
 
-"Edgar Batiste" ns1:parentOf <https://www.wikidata.org/wiki/Q367071> ;
-    ns1:spouseOf "Lilly Brown" .
+"Edgar Batiste" ns2:parentOf <https://www.wikidata.org/wiki/Q367071> ;
+    ns2:spouseOf "Lilly Brown" .
 
-"Eugene Baptiste" ns1:parentOf "Carrie Battiste",
+"Eugene Baptiste" ns1:deathDate "abt 1935" ;
+    ns2:parentOf "Carrie Battiste",
         "Courie Battiste",
         "Harold Sr. Battiste" .
 
-"Jamal Batiste" ns1:childOf "David Batiste" ;
-    ns1:siblingOf "Damon Batiste",
+"Jamal Batiste" ns1:instrument "Bass",
+        "Keyboard",
+        "Vocals" ;
+    ns2:childOf "David Batiste" ;
+    ns2:siblingOf "Damon Batiste",
         "David Russell Jr. (Russell) Batiste",
         "Ryan Batiste" .
 
-"Leileh Marie Batiste" ns1:childOf "Damon Batiste",
+"Leileh Marie Batiste" ns2:childOf "Damon Batiste",
         "Johana Batiste" .
 
-"Lilly Brown" ns1:parentOf <https://www.wikidata.org/wiki/Q367071> ;
-    ns1:spouseOf "Edgar Batiste" .
+"Lilly Brown" ns2:parentOf <https://www.wikidata.org/wiki/Q367071> ;
+    ns2:spouseOf "Edgar Batiste" .
 
-"Mary Booker" ns1:parentOf "Pearl Wilmer Booker Battiste" ;
-    ns1:spouseOf "Wilbert Booker" .
+"Mary Booker" ns2:parentOf "Pearl Wilmer Booker Battiste" ;
+    ns2:spouseOf "Wilbert Booker" .
 
-"Nala Jean Batiste" ns1:childOf "Damon Batiste",
+"Nala Jean Batiste" ns2:childOf "Damon Batiste",
         "Johana Batiste" .
 
-"Ryan Batiste" ns1:childOf "David Batiste" ;
-    ns1:siblingOf "Damon Batiste",
+"Ryan Batiste" ns1:instrument "Drums" ;
+    ns2:childOf "David Batiste" ;
+    ns2:siblingOf "Damon Batiste",
         "David Russell Jr. (Russell) Batiste",
         "Jamal Batiste" .
 
-"Wilbert Booker" ns1:parentOf "Pearl Wilmer Booker Battiste" ;
-    ns1:spouseOf "Mary Booker" .
+"Wilbert Booker" ns2:parentOf "Pearl Wilmer Booker Battiste" ;
+    ns2:spouseOf "Mary Booker" .
 
-<https://www.wikidata.org/wiki/Q367071> ns1:childOf "Edgar Batiste",
+<https://www.wikidata.org/wiki/Q367071> ns1:birthDate "1932-11-07" ;
+    ns1:deathDate "2007-05-06" ;
+    ns1:instrument "Clarinet" ;
+    ns2:childOf "Edgar Batiste",
         "Lilly Brown" ;
-    ns1:spouseOf "Edith Chatters Batiste" .
+    ns2:spouseOf "Edith Chatters Batiste" .
 
-"Courie Battiste" ns1:childOf "Eugene Battiste" ;
-    ns1:siblingOf "Courie Battiste",
+"Courie Battiste" ns1:birthDate "abt 1900" ;
+    ns2:childOf "Eugene Battiste" ;
+    ns2:siblingOf "Courie Battiste",
         "Harold Sr. Battiste" .
 
-"Elizabeth Baptiste" ns1:parentOf "Felicia Boykins",
+"Elizabeth Baptiste" ns2:parentOf "Felicia Boykins",
         "Milton Sr. Batiste" ;
-    ns1:spouseOf "Scipio Baptiste" .
+    ns2:spouseOf "Scipio Baptiste" .
 
-"Felicia Boykins" ns1:childOf "Elizabeth Baptiste",
+"Felicia Boykins" ns1:birthDate "abt 1894" ;
+    ns1:deathDate "1962-09-16" ;
+    ns1:instrument "Vocals" ;
+    ns2:childOf "Elizabeth Baptiste",
         "Scipio Baptiste" ;
-    ns1:siblingOf "Milton Sr. Batiste" ;
-    ns1:spouseOf "Earl Boykins" .
+    ns2:siblingOf "Milton Sr. Batiste" ;
+    ns2:spouseOf "Earl Boykins" .
 
-"Hazel Battiste" ns1:parentOf "Earl Battiste",
+"Hazel Battiste" ns1:birthDate "abt 1904" ;
+    ns2:parentOf "Earl Battiste",
         "Warren Battiste" ;
-    ns1:spouseOf "Alsam/Willie Battiste" .
+    ns2:spouseOf "Alsam/Willie Battiste" .
 
-"Scipio Baptiste" ns1:parentOf "Felicia Boykins",
+"Scipio Baptiste" ns1:instrument "Double Bass" ;
+    ns2:parentOf "Felicia Boykins",
         "Milton Sr. Batiste" ;
-    ns1:spouseOf "Elizabeth Baptiste" .
+    ns2:spouseOf "Elizabeth Baptiste" .
 
-"Johana Batiste" ns1:parentOf "Damon Jr. (D.J.) Batiste",
+"Johana Batiste" ns2:parentOf "Damon Jr. (D.J.) Batiste",
         "Leileh Marie Batiste",
         "Nala Jean Batiste" ;
-    ns1:spouseOf "Damon Batiste" .
+    ns2:spouseOf "Damon Batiste" .
 
-"Pearl Wilmer Booker Battiste" ns1:childOf "Mary Booker",
+"Pearl Wilmer Booker Battiste" ns1:birthDate "1900" ;
+    ns1:deathDate "1957" ;
+    ns2:childOf "Mary Booker",
         "Wilbert Booker" ;
-    ns1:parentOf "Alvin Battiste",
+    ns2:parentOf "Alvin Battiste",
         "Harold Raymond Jr. Battiste" ;
-    ns1:spouseOf "Harold Sr. Battiste" .
+    ns2:spouseOf "Harold Sr. Battiste" .
 
-"Estella Curtis Batiste" ns1:parentOf "David Batiste",
+"Estella Curtis Batiste" ns1:birthDate "1915-06-09" ;
+    ns1:deathDate "2017-09-06" ;
+    ns1:instrument "Piano" ;
+    ns2:parentOf "David Batiste",
         "Michael Batiste",
         "Paul Batiste",
         "Peter Batiste" ;
-    ns1:spouseOf "John Jeffrey Batiste" .
+    ns2:spouseOf "John Jeffrey Batiste" .
 
-"Harold Sr. Battiste" ns1:childOf "Eugene Baptiste" ;
-    ns1:parentOf "Alvin Battiste",
+"Harold Sr. Battiste" ns1:birthDate "1903" ;
+    ns1:deathDate "1957" ;
+    ns2:childOf "Eugene Baptiste" ;
+    ns2:parentOf "Alvin Battiste",
         "Harold Raymond Jr. Battiste" ;
-    ns1:siblingOf "Carrie Battiste" ;
-    ns1:spouseOf "Pearl Wilmer Booker Battiste" .
+    ns2:siblingOf "Carrie Battiste" ;
+    ns2:spouseOf "Pearl Wilmer Booker Battiste" .
 
-"John Jeffrey Batiste" ns1:parentOf "David Batiste",
+"John Jeffrey Batiste" ns1:birthDate "abt 1913" ;
+    ns1:deathDate "2012-06-27" ;
+    ns2:parentOf "David Batiste",
         "Michael Batiste",
         "Paul Batiste",
         "Peter Batiste" ;
-    ns1:spouseOf "Estella Curtis Batiste" .
+    ns2:spouseOf "Estella Curtis Batiste" .
 
-"Erica Batiste" ns1:childOf <https://www.wikidata.org/wiki/Q1341386> ;
-    ns1:siblingOf "Karen B. Williams",
+"Erica Batiste" ns2:childOf <https://www.wikidata.org/wiki/Q1341386> ;
+    ns2:siblingOf "Karen B. Williams",
         "Lionel Paul Jr. Batiste",
         "Loretta B. Smith",
         "Malika Batiste",
         "Tanya Batiste",
         "Vanessa B. Laurent" .
 
-"Lionel Paul Jr. Batiste" ns1:childOf <https://www.wikidata.org/wiki/Q1341386> ;
-    ns1:siblingOf "Erica Batiste",
+"Lionel Paul Jr. Batiste" ns2:childOf <https://www.wikidata.org/wiki/Q1341386> ;
+    ns2:siblingOf "Erica Batiste",
         "Karen B. Williams",
         "Loretta B. Smith",
         "Malika Batiste",
         "Tanya Batiste",
         "Vanessa B. Laurent" .
 
-"Malika Batiste" ns1:childOf <https://www.wikidata.org/wiki/Q1341386> ;
-    ns1:siblingOf "Erica Batiste",
+"Malika Batiste" ns2:childOf <https://www.wikidata.org/wiki/Q1341386> ;
+    ns2:siblingOf "Erica Batiste",
         "Karen B. Williams",
         "Lionel Paul Jr. Batiste",
         "Loretta B. Smith",
         "Tanya Batiste",
         "Vanessa B. Laurent" .
 
-"Marlene Batiste" ns1:childOf "Feliciana Mary Jolivette Batiste",
+"Marlene Batiste" ns2:childOf "Feliciana Mary Jolivette Batiste",
         "Milton Sr. Batiste" ;
-    ns1:siblingOf "Martha Batiste",
+    ns2:siblingOf "Martha Batiste",
         "Mary Batiste",
         "Maurice Scipio Batiste",
         "Merial Batiste",
         "Milton Joseph Jr. Batiste",
         "Miriam Batiste" .
 
-"Martha Batiste" ns1:childOf "Feliciana Mary Jolivette Batiste",
+"Martha Batiste" ns2:childOf "Feliciana Mary Jolivette Batiste",
         "Milton Sr. Batiste" ;
-    ns1:siblingOf "Marlene Batiste",
+    ns2:siblingOf "Marlene Batiste",
         "Mary Batiste",
         "Maurice Scipio Batiste",
         "Merial Batiste",
         "Milton Joseph Jr. Batiste",
         "Miriam Batiste" .
 
-"Mary Batiste" ns1:childOf "Feliciana Mary Jolivette Batiste",
+"Mary Batiste" ns2:childOf "Feliciana Mary Jolivette Batiste",
         "Milton Sr. Batiste" ;
-    ns1:siblingOf "Marlene Batiste",
+    ns2:siblingOf "Marlene Batiste",
         "Martha Batiste",
         "Maurice Scipio Batiste",
         "Merial Batiste",
         "Milton Joseph Jr. Batiste",
         "Miriam Batiste" .
 
-"Maurice Scipio Batiste" ns1:childOf "Feliciana Mary Jolivette Batiste",
+"Maurice Scipio Batiste" ns2:childOf "Feliciana Mary Jolivette Batiste",
         "Milton Sr. Batiste" ;
-    ns1:siblingOf "Marlene Batiste",
+    ns2:siblingOf "Marlene Batiste",
         "Martha Batiste",
         "Mary Batiste",
         "Merial Batiste",
         "Milton Joseph Jr. Batiste",
         "Miriam Batiste" .
 
-"Merial Batiste" ns1:childOf "Feliciana Mary Jolivette Batiste",
+"Merial Batiste" ns2:childOf "Feliciana Mary Jolivette Batiste",
         "Milton Sr. Batiste" ;
-    ns1:siblingOf "Marlene Batiste",
+    ns2:siblingOf "Marlene Batiste",
         "Martha Batiste",
         "Mary Batiste",
         "Maurice Scipio Batiste",
         "Milton Joseph Jr. Batiste",
         "Miriam Batiste" .
 
-"Tanya Batiste" ns1:childOf <https://www.wikidata.org/wiki/Q1341386> ;
-    ns1:siblingOf "Erica Batiste",
+"Tanya Batiste" ns2:childOf <https://www.wikidata.org/wiki/Q1341386> ;
+    ns2:siblingOf "Erica Batiste",
         "Karen B. Williams",
         "Lionel Paul Jr. Batiste",
         "Loretta B. Smith",
         "Malika Batiste",
         "Vanessa B. Laurent" .
 
-"Alma Batiste" ns1:childOf "Irma Batiste",
+"Alma Batiste" ns1:birthDate "abt 1915" ;
+    ns2:childOf "Irma Batiste",
         "Walter Batiste" ;
-    ns1:siblingOf <https://www.wikidata.org/wiki/Q1341386>,
+    ns2:siblingOf <https://www.wikidata.org/wiki/Q1341386>,
         "Arthur Batiste",
         "Corinne Batiste",
         "Fer(di)nand Batiste",
@@ -319,9 +371,10 @@
         "Miriam Batiste",
         "Norman Batiste" .
 
-"Arthur Batiste" ns1:childOf "Irma Batiste",
+"Arthur Batiste" ns1:birthDate "abt 1922" ;
+    ns2:childOf "Irma Batiste",
         "Walter Batiste" ;
-    ns1:siblingOf <https://www.wikidata.org/wiki/Q1341386>,
+    ns2:siblingOf <https://www.wikidata.org/wiki/Q1341386>,
         "Alma Batiste",
         "Corinne Batiste",
         "Fer(di)nand Batiste",
@@ -329,9 +382,10 @@
         "Miriam Batiste",
         "Norman Batiste" .
 
-"Corinne Batiste" ns1:childOf "Irma Batiste",
+"Corinne Batiste" ns1:birthDate "abt 1914" ;
+    ns2:childOf "Irma Batiste",
         "Walter Batiste" ;
-    ns1:siblingOf <https://www.wikidata.org/wiki/Q1341386>,
+    ns2:siblingOf <https://www.wikidata.org/wiki/Q1341386>,
         "Alma Batiste",
         "Arthur Batiste",
         "Fer(di)nand Batiste",
@@ -339,12 +393,14 @@
         "Miriam Batiste",
         "Norman Batiste" .
 
-"Feliciana Mary Jolivette Batiste" ns1:childOf "Joseph Charles Jolivette",
+"Feliciana Mary Jolivette Batiste" ns1:birthDate "1906" ;
+    ns2:childOf "Joseph Charles Jolivette",
         "Virginia Edwards" .
 
-"Fer(di)nand Batiste" ns1:childOf "Irma Batiste",
+"Fer(di)nand Batiste" ns1:birthDate "abt 1917" ;
+    ns2:childOf "Irma Batiste",
         "Walter Batiste" ;
-    ns1:siblingOf <https://www.wikidata.org/wiki/Q1341386>,
+    ns2:siblingOf <https://www.wikidata.org/wiki/Q1341386>,
         "Alma Batiste",
         "Arthur Batiste",
         "Corinne Batiste",
@@ -352,9 +408,10 @@
         "Miriam Batiste",
         "Norman Batiste" .
 
-"Henry Batiste" ns1:childOf "Irma Batiste",
+"Henry Batiste" ns1:birthDate "abt 1920" ;
+    ns2:childOf "Irma Batiste",
         "Walter Batiste" ;
-    ns1:siblingOf <https://www.wikidata.org/wiki/Q1341386>,
+    ns2:siblingOf <https://www.wikidata.org/wiki/Q1341386>,
         "Alma Batiste",
         "Arthur Batiste",
         "Corinne Batiste",
@@ -362,7 +419,8 @@
         "Miriam Batiste",
         "Norman Batiste" .
 
-"Irma Batiste" ns1:parentOf <https://www.wikidata.org/wiki/Q1341386>,
+"Irma Batiste" ns1:birthDate "abt 1895" ;
+    ns2:parentOf <https://www.wikidata.org/wiki/Q1341386>,
         "Alma Batiste",
         "Arthur Batiste",
         "Corinne Batiste",
@@ -370,11 +428,12 @@
         "Henry Batiste",
         "Miriam Batiste",
         "Norman Batiste" ;
-    ns1:spouseOf "Walter Batiste" .
+    ns2:spouseOf "Walter Batiste" .
 
-"Norman Batiste" ns1:childOf "Irma Batiste",
+"Norman Batiste" ns1:birthDate "abt 1930" ;
+    ns2:childOf "Irma Batiste",
         "Walter Batiste" ;
-    ns1:siblingOf <https://www.wikidata.org/wiki/Q1341386>,
+    ns2:siblingOf <https://www.wikidata.org/wiki/Q1341386>,
         "Alma Batiste",
         "Arthur Batiste",
         "Corinne Batiste",
@@ -382,27 +441,31 @@
         "Henry Batiste",
         "Miriam Batiste" .
 
-"Milton Sr. Batiste" ns1:childOf "Elizabeth Baptiste",
+"Milton Sr. Batiste" ns1:birthDate "1905-04-01" ;
+    ns2:childOf "Elizabeth Baptiste",
         "Scipio Baptiste" ;
-    ns1:parentOf "Marlene Batiste",
+    ns2:parentOf "Marlene Batiste",
         "Martha Batiste",
         "Mary Batiste",
         "Maurice Scipio Batiste",
         "Merial Batiste",
         "Milton Joseph Jr. Batiste",
         "Miriam Batiste" ;
-    ns1:siblingOf "Felicia Boykins" .
+    ns2:siblingOf "Felicia Boykins" .
 
-<https://www.wikidata.org/wiki/Q1341386> ns1:childOf "Irma Batiste",
+<https://www.wikidata.org/wiki/Q1341386> ns1:birthDate "1931-02-11" ;
+    ns1:deathDate "2012-07-08" ;
+    ns1:instrument "Bass Drum" ;
+    ns2:childOf "Irma Batiste",
         "Walter Batiste" ;
-    ns1:parentOf "Erica Batiste",
+    ns2:parentOf "Erica Batiste",
         "Karen B. Williams",
         "Lionel Paul Jr. Batiste",
         "Loretta B. Smith",
         "Malika Batiste",
         "Tanya Batiste",
         "Vanessa B. Laurent" ;
-    ns1:siblingOf "Alma Batiste",
+    ns2:siblingOf "Alma Batiste",
         "Arthur Batiste",
         "Corinne Batiste",
         "Fer(di)nand Batiste",
@@ -410,11 +473,12 @@
         "Miriam Batiste",
         "Norman Batiste" .
 
-"Miriam Batiste" ns1:childOf "Feliciana Mary Jolivette Batiste",
+"Miriam Batiste" ns1:birthDate "abt 1926" ;
+    ns2:childOf "Feliciana Mary Jolivette Batiste",
         "Irma Batiste",
         "Milton Sr. Batiste",
         "Walter Batiste" ;
-    ns1:siblingOf <https://www.wikidata.org/wiki/Q1341386>,
+    ns2:siblingOf <https://www.wikidata.org/wiki/Q1341386>,
         "Alma Batiste",
         "Arthur Batiste",
         "Corinne Batiste",

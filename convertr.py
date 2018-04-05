@@ -5,8 +5,9 @@ import rdflib
 name_id_dict_list = []
 link_finder = re.compile('[^,]+')
 
-date_of_birth = URIRef("http://dbpedia.org/ontology/birthDate")
-instrument = URIRef("http://dbpedia.org/ontology/instrument")
+date_of_birth_is = URIRef("http://dbpedia.org/ontology/birthDate")
+date_of_death_is = URIRef("http://dbpedia.org/ontology/deathDate")
+instrument_is = URIRef("http://dbpedia.org/ontology/instrument")
 
 parent_of = URIRef("http://vocab.org/relationship/parentOf")
 mother_of = URIRef("http://dbpedia.org/ontology/mother")
@@ -56,6 +57,9 @@ with open("Batiste Information Resources - Genealogy Data.csv") as f:
         adopted_child_id = ""
         spouse_lbl = ""
         spouse_id = ""
+        instrument = ""
+        birthdate = ""
+        deathdate = ""
 
         identifier = row['Personal Identifier 1']
         label = row['Family Member First Name'] + " " + row['Family Member Last Name']
@@ -71,6 +75,10 @@ with open("Batiste Information Resources - Genealogy Data.csv") as f:
         adopted_child_id = row['Adopted Child ID']
         spouse_lbl = row['Spouse']
         spouse_id = row['Spouse ID']
+        instrument = row['Instrument']
+        birthdate = row['Date of Birth']
+        deathdate = row['Date of Death']
+
         # if identifier != "":
         #     print(label)
         #     print(id)
@@ -131,6 +139,17 @@ with open("Batiste Information Resources - Genealogy Data.csv") as f:
                 if spouse_lbl != "":
                     g.add((identifier, spouse_of, Literal(spouse_lbl)))
 
+            if instrument != "":
+                instrument = Literal(instrument)
+                g.add((identifier, instrument_is, instrument))
+
+            if birthdate != "":
+                birthdate = Literal(birthdate)
+                g.add((identifier, date_of_birth_is, birthdate))
+
+            if deathdate != "":
+                deathdate = Literal(deathdate)
+                g.add((identifier, date_of_death_is, deathdate))
 
 
         elif identifier == "":
@@ -185,6 +204,18 @@ with open("Batiste Information Resources - Genealogy Data.csv") as f:
             elif spouse_id == "":
                 if spouse_lbl != "":
                     g.add((label, spouse_of, Literal(spouse_lbl)))
+
+            if instrument != "":
+                instrument = Literal(instrument)
+                g.add((label, instrument_is, instrument))
+
+            if birthdate != "":
+                birthdate = Literal(birthdate)
+                g.add((label, date_of_birth_is, birthdate))
+
+            if deathdate != "":
+                deathdate = Literal(deathdate)
+                g.add((label, date_of_death_is, deathdate))
 
 
 
