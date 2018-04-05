@@ -1,4 +1,4 @@
-import csv, re
+import csv, re, json
 from rdflib.graph import Graph, URIRef, Literal
 import rdflib
 
@@ -12,6 +12,7 @@ parent_of = URIRef("http://vocab.org/relationship/#parentOf")
 mother_of = URIRef("http://dbpedia.org/ontology/mother")
 father_of = URIRef("http://dbpedia.org/ontology/father")
 child_of = URIRef("http://vocab.org/relationship/childOf")
+adopted_son_of = URIRef("http://cedric.cnam.fr/isid/ontologies/PersonLink.owl#3.1.2.1")
 daughter_of = URIRef("http://cedric.cnam.fr/isid/ontologies/files/PersonLink.html#3.1.1")
 son_of = URIRef("http://cedric.cnam.fr/isid/ontologies/files/PersonLink.html#3.1.2")
 sibling_of = URIRef("http://vocab.org/relationship/siblingOf")
@@ -56,30 +57,116 @@ with open("Batiste Information Resources - Genealogy Data.csv") as f:
         spouse_lbl = ""
         spouse_id = ""
 
-        identifier = URIRef(row['Personal Identifier 1'])
-        label = Literal(row['Family Member First Name'] + " " + row['Family Member Last Name'])
-        father_lbl = Literal(row['Father'])
-        father_id = URIRef(row['Father ID'])
-        mother_lbl = Literal(row['Mother'])
-        mother_id = URIRef(row['Mother ID'])
-        sibling_lbl = Literal(row['Sibling'])
-        sibling_id = URIRef(row['Sibling ID'])
-        child_lbl = Literal(row['Child'])
-        child_id = URIRef(row['Child ID'])
-        adopted_child_lbl = Literal(row['Adopted Child'])
-        adopted_child_id = URIRef(row['Adopted Child ID'])
-        spouse_lbl = Literal(row['Spouse'])
-        spouse_id = URIRef(row['Spouse ID'])
+        identifier = row['Personal Identifier 1']
+        label = row['Family Member First Name'] + " " + row['Family Member Last Name']
+        father_lbl = row['Father']
+        father_id = row['Father ID']
+        mother_lbl = row['Mother']
+        mother_id = row['Mother ID']
+        sibling_lbl = row['Sibling']
+        sibling_id = row['Sibling ID']
+        child_lbl = row['Child']
+        child_id = row['Child ID']
+        adopted_child_lbl = row['Adopted Child']
+        adopted_child_id = row['Adopted Child ID']
+        spouse_lbl = row['Spouse']
+        spouse_id = row['Spouse ID']
         # if identifier != "":
         #     print(label)
         #     print(id)
         #     print("\n")
+        # print(father_id)
+        # print(father_lbl)
+
         if identifier != "":
+            identifier = URIRef(row['Personal Identifier 1'])
+
             if father_id != "":
-                g.add((identifieir, son_of, father_id))
+                father_id = URIRef(father_id)
+                g.add((identifier, child_of, father_id))
+
             elif father_id == "":
-                g.add((identifier, son_of, father_lbl))
-    print(g.serialize(format='turtle'))
+                if father_lbl != "":
+                    g.add((identifier, child_of, Literal(father_lbl)))
+
+            if mother_id != "":
+                mother_id = URIRef(mother_id)
+                g.add((identifier, child_of, mother_id))
+
+            elif mother_id == "":
+                if mother_lbl != "":
+                    g.add((identifier, child_of, Literal(mother_lbl)))
+
+            if sibling_id != "":
+                sibling_id = URIRef(sibling_id)
+                g.add((identifier, sibling_of, sibling_id))
+
+            elif sibling_id == "":
+                if sibling_lbl != "":
+                    g.add((identifier, sibling_of, Literal(sibling_lbl)))
+
+            if child_id != "":
+                child_id = URIRef(child_id)
+                g.add((identifier, parent_of, child_id))
+
+            elif child_id == "":
+                if child_lbl != "":
+                    g.add((identifier, parent_of, Literal(child_lbl)))
+
+            if adopted_child_id != "":
+                adopted_child_id = URIRef(adopted_child_id)
+                g.add((identifier, parent_of, adopted_child_id))
+                g.add((adopted_child_id, adopted_son_of, identifier))
+
+            elif adopted_child_id == "":
+                if adopted_child_lbl != "":
+                    g.add((identifier, parent_of, Literal(adopted_child_lbl)))
+                    g.add((Literal(adopted_child_id), adopted_son_of, identifier))
+
+            if spouse_id != "":
+                spouse_id = URIRef(spouse_id)
+                g.add((identifier, spouse_of, spouse_id))
+
+            elif spouse_id == "":
+                if spouse_lbl != "":
+                    g.add((identifier, spouse_of, Literal(spouse_lbl)))
+
+
+
+
+            # if mother_id != "":
+            #     g.add((identifier, son_of, mother_id))
+            # elif mother_id == "":
+            #     g.add((identifier, son_of, mother_lbl))
+            #
+            # if sibling_id != "":
+            #     g.add((identifier, sibling_of, sibling_id))
+            # elif sibling_id == "":
+            #     g.add((identifier, sibling_of, sibling_lbl))
+            #
+            # if child_id != "":
+            #     g.add((identifier, parent_of, child_id))
+            # elif child_id == "":
+            #     g.add((identifier, parent_of, child_lbl))
+            #
+            # if adopted_child_id != "":
+            #     g.add((identifier, parent_of, adopted_child_id))
+            # elif adopted_child_id == "":
+            #     g.add((identifier, parent_of, adopted_child_lbl))
+            #
+            # if spouse_id != "":
+            #     g.add((identifier, spouse_of, spouse_id))
+            # elif spouse_id == "":
+            #     g.add((identifier, spouse_of, spouse_lbl))
+            #
+            #
+            #
+            #
+            #
+
+
+g.serialize("test.rdf", format="turtle")
+
 
 
 

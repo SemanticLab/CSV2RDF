@@ -1,0 +1,95 @@
+@prefix ns1: <http://vocab.org/relationship/> .
+@prefix ns2: <http://vocab.org/relationship/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/authorities/names/no2007086020> ns2:parentOf "Damon Jr. (D.J.) Batiste",
+        "Leileh Marie Batiste",
+        "Nala Jean Batiste" ;
+    ns1:childOf "Estella Curtis Batiste",
+        "John Jeffrey Batiste" ;
+    ns1:spouseOf "Johana Batiste" .
+
+<http://id.loc.gov/authorities/names/no2009105135> ns1:childOf "David Batiste" ;
+    ns1:siblingOf "Damon Batiste",
+        "Jamal Batiste",
+        "Ryan Batiste" .
+
+<http://id.loc.gov/authorities/names/no2010043071> ns1:childOf "Michael Batiste" ;
+    ns1:siblingOf "Michael Jr. (Lil Mike) Batiste" .
+
+<http://id.loc.gov/authorities/names/no2011128050> ns2:parentOf "Damon Batiste",
+        "David Russell Jr. (Russell) Batiste" ;
+    ns1:childOf "Estella Curtis Batiste",
+        "John Jeffrey Batiste" ;
+    ns1:siblingOf "Damon Batiste",
+        "Michael Batiste",
+        "Paul Batiste",
+        "Peter Batiste" .
+
+<http://id.loc.gov/authorities/names/no99007541> ns1:childOf "Feliciana Mary Jolivette Batiste",
+        "Milton Sr. Batiste" ;
+    ns1:siblingOf "Marlene Batiste",
+        "Martha Batiste",
+        "Mary Batiste",
+        "Maurice Scipio Batiste",
+        "Merial Batiste",
+        "Miriam Batiste" .
+
+<https://musicbrainz.org/artist/32d4b375-1adc-4a75-b6c7-560f5922dcde> ns1:childOf "Alsam/Willie Battiste",
+        "Hazel Battiste" ;
+    ns1:siblingOf "Lloyd Battiste",
+        "Warren Battiste",
+        "Westley Battiste" .
+
+<https://musicbrainz.org/artist/76be3c27-b3fe-4a06-a76d-96f79663195b> ns1:spouseOf <https://www.wikidata.org/wiki/Q367071> .
+
+<https://www.discogs.com/artist/1239283-Paul-Batiste> ns2:parentOf "Travis Batiste" ;
+    ns1:childOf "Estella Curtis Batiste",
+        "John Jeffrey Batiste" ;
+    ns1:siblingOf "Damon Batiste",
+        "David Batiste",
+        "Michael Batiste",
+        "Peter Batiste" .
+
+<https://www.discogs.com/artist/5191482-Michael-Batiste> ns2:parentOf <https://www.wikidata.org/wiki/Q6272528> ;
+    ns1:childOf "Estella Curtis Batiste",
+        "John Jeffrey Batiste" ;
+    ns1:siblingOf "Damon Batiste",
+        "David Batiste",
+        "Paul Batiste",
+        "Peter Batiste" .
+
+<https://www.discogs.com/artist/5191485-Peter-Batiste> ns1:childOf "Estella Curtis Batiste",
+        "John Jeffrey Batiste" ;
+    ns1:siblingOf "Damon Batiste",
+        "David Batiste",
+        "Michael Batiste",
+        "Paul Batiste" .
+
+<https://www.wikidata.org/wiki/Q1327228> ns1:childOf "Harold Sr. Battiste",
+        "Pearl WIlmer Booker Battiste" .
+
+<https://www.wikidata.org/wiki/Q1341386> ns2:parentOf "Erica Batiste",
+        "Karen B. Williams",
+        "Lionel Paul Jr. Batiste",
+        "Loretta B. Smith",
+        "Malika Batiste",
+        "Tanya Batiste",
+        "Vanessa B. Laurent" ;
+    ns1:childOf "Irma Batiste",
+        "Walter Batiste" ;
+    ns1:siblingOf "Alma Batiste",
+        "Arthur Batiste",
+        "Corinne Batiste",
+        "Fer(di)nand Batiste",
+        "Henry Batiste",
+        "Miriam Batiste",
+        "Norman Batiste" .
+
+<https://www.wikidata.org/wiki/Q367071> ns1:childOf "Edgar Batiste",
+        "Lilly Brown" ;
+    ns1:spouseOf "Edith Chatters Batiste" .
+
