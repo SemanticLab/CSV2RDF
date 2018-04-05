@@ -41,7 +41,7 @@ with open("Batiste Information Resources - Genealogy Data.csv") as f:
     file = csv.DictReader(f)
 
     for row in file:
-        id = ""
+        identifier = ""
         label = ""
         father_lbl = ""
         father_id = ""
@@ -56,7 +56,7 @@ with open("Batiste Information Resources - Genealogy Data.csv") as f:
         spouse_lbl = ""
         spouse_id = ""
 
-        id = URIRef(row['Personal Identifier 1'])
+        identifier = URIRef(row['Personal Identifier 1'])
         label = Literal(row['Family Member First Name'] + " " + row['Family Member Last Name'])
         father_lbl = Literal(row['Father'])
         father_id = URIRef(row['Father ID'])
@@ -70,15 +70,15 @@ with open("Batiste Information Resources - Genealogy Data.csv") as f:
         adopted_child_id = URIRef(row['Adopted Child ID'])
         spouse_lbl = Literal(row['Spouse'])
         spouse_id = URIRef(row['Spouse ID'])
-        # if id != "":
+        # if identifier != "":
         #     print(label)
         #     print(id)
         #     print("\n")
-        if id != "":
+        if identifier != "":
             if father_id != "":
-                g.add((id, son_of, father_id))
+                g.add((identifieir, son_of, father_id))
             elif father_id == "":
-                g.add((id, son_of, father_lbl))
+                g.add((identifier, son_of, father_lbl))
     print(g.serialize(format='turtle'))
 
 
@@ -95,8 +95,8 @@ with open("Batiste Information Resources - Genealogy Data.csv") as f:
 
 
 
-        #     id = re.findall(link_finder, ids)
-        #     id = id[0]
+        #     identifier = re.findall(link_finder, ids)
+        #     identifier = id[0]
         #     print(name)
         #     print(id)
         #     name_id_dict = {
