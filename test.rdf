@@ -71,6 +71,328 @@
 <https://www.wikidata.org/wiki/Q1327228> ns1:childOf "Harold Sr. Battiste",
         "Pearl WIlmer Booker Battiste" .
 
+"" <http://cedric.cnam.fr/isid/ontologies/PersonLink.owl#3.1.2.1> "Harold Sr. Battiste",
+        "Pearl Wilmer Booker Battiste" .
+
+"Alsam/WIllie Battiste" ns1:parentOf "Earl Battiste",
+        "Lloyd Battiste",
+        "Warren Battiste",
+        "Westley Battiste" ;
+    ns1:spouseOf "Hazel Battiste" .
+
+"Damon Jr. Batiste" ns1:childOf "Damon Batiste",
+        "Johana Batiste" .
+
+"Hazel Batiste" ns1:parentOf "Lloyd Battiste",
+        "Westley Battiste" .
+
+"Karen Batiste Williams" ns1:childOf <https://www.wikidata.org/wiki/Q1341386> ;
+    ns1:siblingOf "Erica Batiste",
+        "Lionel Paul Jr. Batiste",
+        "Loretta B. Smith",
+        "Malika Batiste",
+        "Tanya Batiste",
+        "Vanessa B. Laurent" .
+
+"Loretta Batiste Smith" ns1:childOf <https://www.wikidata.org/wiki/Q1341386> ;
+    ns1:siblingOf "Erica Batiste",
+        "Karen B. Williams",
+        "Lionel Paul Jr. Batiste",
+        "Malika Batiste",
+        "Tanya Batiste",
+        "Vanessa B. Laurent" .
+
+"Michael Jr. Batiste" ns1:childOf "Michael Batiste" ;
+    ns1:siblingOf <https://www.wikidata.org/wiki/Q6272528> .
+
+"Peter Jr. Batiste" ns1:childOf "Peter Batiste" ;
+    ns1:siblingOf "Quanna Batiste" .
+
+"Vanessa Batiste Laurent" ns1:childOf <https://www.wikidata.org/wiki/Q1341386> ;
+    ns1:siblingOf "Erica Batiste",
+        "Karen B. Williams",
+        "Lionel Paul Jr. Batiste",
+        "Loretta B. Smith",
+        "Malika Batiste",
+        "Tanya Batiste" .
+
+"Walter Louis Batiste" ns1:parentOf <https://www.wikidata.org/wiki/Q1341386>,
+        "Alma Batiste",
+        "Arthur Batiste",
+        "Corinne Batiste",
+        "Fer(di)nand Batiste",
+        "Henry Batiste",
+        "Miriam Batiste",
+        "Norman Batiste" ;
+    ns1:spouseOf "Irma Batiste" .
+
+"Warren Joseph Battiste" ns1:childOf "Alsam/Willie Battiste",
+        "Hazel Battiste" ;
+    ns1:siblingOf "Earl Battiste",
+        "Lloyd Battiste",
+        "Westley Battiste" .
+
+"Joseph Charles Jolivette" ns1:parentOf "Feliciana Mary Jolivette Batiste" .
+
+"Quanna Batiste" ns1:childOf "Peter Batiste" ;
+    ns1:siblingOf "Peter Jr. (Peter Rabbit) Batiste" .
+
+"Travis Batiste" ns1:childOf "Paul Batiste" .
+
+"Virginia Edwards" ns1:parentOf "Feliciana Mary Jolivette Batiste" .
+
+"Carrie Battiste" ns1:childOf "Eugene Baptiste" ;
+    ns1:parentOf "Alvin Battiste" ;
+    ns1:siblingOf "Courie Battiste",
+        "Harold Sr. Battiste" .
+
+"Edgar Batiste" ns1:parentOf <https://www.wikidata.org/wiki/Q367071> ;
+    ns1:spouseOf "Lilly Brown" .
+
+"Eugene Baptiste" ns1:parentOf "Carrie Battiste",
+        "Courie Battiste",
+        "Harold Sr. Battiste" .
+
+"Jamal Batiste" ns1:childOf "David Batiste" ;
+    ns1:siblingOf "Damon Batiste",
+        "David Russell Jr. (Russell) Batiste",
+        "Ryan Batiste" .
+
+"Leileh Marie Batiste" ns1:childOf "Damon Batiste",
+        "Johana Batiste" .
+
+"Lilly Brown" ns1:parentOf <https://www.wikidata.org/wiki/Q367071> ;
+    ns1:spouseOf "Edgar Batiste" .
+
+"Mary Booker" ns1:parentOf "Pearl Wilmer Booker Battiste" ;
+    ns1:spouseOf "Wilbert Booker" .
+
+"Nala Jean Batiste" ns1:childOf "Damon Batiste",
+        "Johana Batiste" .
+
+"Ryan Batiste" ns1:childOf "David Batiste" ;
+    ns1:siblingOf "Damon Batiste",
+        "David Russell Jr. (Russell) Batiste",
+        "Jamal Batiste" .
+
+"Wilbert Booker" ns1:parentOf "Pearl Wilmer Booker Battiste" ;
+    ns1:spouseOf "Mary Booker" .
+
+<https://www.wikidata.org/wiki/Q367071> ns1:childOf "Edgar Batiste",
+        "Lilly Brown" ;
+    ns1:spouseOf "Edith Chatters Batiste" .
+
+"Courie Battiste" ns1:childOf "Eugene Battiste" ;
+    ns1:siblingOf "Courie Battiste",
+        "Harold Sr. Battiste" .
+
+"Elizabeth Baptiste" ns1:parentOf "Felicia Boykins",
+        "Milton Sr. Batiste" ;
+    ns1:spouseOf "Scipio Baptiste" .
+
+"Felicia Boykins" ns1:childOf "Elizabeth Baptiste",
+        "Scipio Baptiste" ;
+    ns1:siblingOf "Milton Sr. Batiste" ;
+    ns1:spouseOf "Earl Boykins" .
+
+"Hazel Battiste" ns1:parentOf "Earl Battiste",
+        "Warren Battiste" ;
+    ns1:spouseOf "Alsam/Willie Battiste" .
+
+"Scipio Baptiste" ns1:parentOf "Felicia Boykins",
+        "Milton Sr. Batiste" ;
+    ns1:spouseOf "Elizabeth Baptiste" .
+
+"Johana Batiste" ns1:parentOf "Damon Jr. (D.J.) Batiste",
+        "Leileh Marie Batiste",
+        "Nala Jean Batiste" ;
+    ns1:spouseOf "Damon Batiste" .
+
+"Pearl Wilmer Booker Battiste" ns1:childOf "Mary Booker",
+        "Wilbert Booker" ;
+    ns1:parentOf "Alvin Battiste",
+        "Harold Raymond Jr. Battiste" ;
+    ns1:spouseOf "Harold Sr. Battiste" .
+
+"Estella Curtis Batiste" ns1:parentOf "David Batiste",
+        "Michael Batiste",
+        "Paul Batiste",
+        "Peter Batiste" ;
+    ns1:spouseOf "John Jeffrey Batiste" .
+
+"Harold Sr. Battiste" ns1:childOf "Eugene Baptiste" ;
+    ns1:parentOf "Alvin Battiste",
+        "Harold Raymond Jr. Battiste" ;
+    ns1:siblingOf "Carrie Battiste" ;
+    ns1:spouseOf "Pearl Wilmer Booker Battiste" .
+
+"John Jeffrey Batiste" ns1:parentOf "David Batiste",
+        "Michael Batiste",
+        "Paul Batiste",
+        "Peter Batiste" ;
+    ns1:spouseOf "Estella Curtis Batiste" .
+
+"Erica Batiste" ns1:childOf <https://www.wikidata.org/wiki/Q1341386> ;
+    ns1:siblingOf "Karen B. Williams",
+        "Lionel Paul Jr. Batiste",
+        "Loretta B. Smith",
+        "Malika Batiste",
+        "Tanya Batiste",
+        "Vanessa B. Laurent" .
+
+"Lionel Paul Jr. Batiste" ns1:childOf <https://www.wikidata.org/wiki/Q1341386> ;
+    ns1:siblingOf "Erica Batiste",
+        "Karen B. Williams",
+        "Loretta B. Smith",
+        "Malika Batiste",
+        "Tanya Batiste",
+        "Vanessa B. Laurent" .
+
+"Malika Batiste" ns1:childOf <https://www.wikidata.org/wiki/Q1341386> ;
+    ns1:siblingOf "Erica Batiste",
+        "Karen B. Williams",
+        "Lionel Paul Jr. Batiste",
+        "Loretta B. Smith",
+        "Tanya Batiste",
+        "Vanessa B. Laurent" .
+
+"Marlene Batiste" ns1:childOf "Feliciana Mary Jolivette Batiste",
+        "Milton Sr. Batiste" ;
+    ns1:siblingOf "Martha Batiste",
+        "Mary Batiste",
+        "Maurice Scipio Batiste",
+        "Merial Batiste",
+        "Milton Joseph Jr. Batiste",
+        "Miriam Batiste" .
+
+"Martha Batiste" ns1:childOf "Feliciana Mary Jolivette Batiste",
+        "Milton Sr. Batiste" ;
+    ns1:siblingOf "Marlene Batiste",
+        "Mary Batiste",
+        "Maurice Scipio Batiste",
+        "Merial Batiste",
+        "Milton Joseph Jr. Batiste",
+        "Miriam Batiste" .
+
+"Mary Batiste" ns1:childOf "Feliciana Mary Jolivette Batiste",
+        "Milton Sr. Batiste" ;
+    ns1:siblingOf "Marlene Batiste",
+        "Martha Batiste",
+        "Maurice Scipio Batiste",
+        "Merial Batiste",
+        "Milton Joseph Jr. Batiste",
+        "Miriam Batiste" .
+
+"Maurice Scipio Batiste" ns1:childOf "Feliciana Mary Jolivette Batiste",
+        "Milton Sr. Batiste" ;
+    ns1:siblingOf "Marlene Batiste",
+        "Martha Batiste",
+        "Mary Batiste",
+        "Merial Batiste",
+        "Milton Joseph Jr. Batiste",
+        "Miriam Batiste" .
+
+"Merial Batiste" ns1:childOf "Feliciana Mary Jolivette Batiste",
+        "Milton Sr. Batiste" ;
+    ns1:siblingOf "Marlene Batiste",
+        "Martha Batiste",
+        "Mary Batiste",
+        "Maurice Scipio Batiste",
+        "Milton Joseph Jr. Batiste",
+        "Miriam Batiste" .
+
+"Tanya Batiste" ns1:childOf <https://www.wikidata.org/wiki/Q1341386> ;
+    ns1:siblingOf "Erica Batiste",
+        "Karen B. Williams",
+        "Lionel Paul Jr. Batiste",
+        "Loretta B. Smith",
+        "Malika Batiste",
+        "Vanessa B. Laurent" .
+
+"Alma Batiste" ns1:childOf "Irma Batiste",
+        "Walter Batiste" ;
+    ns1:siblingOf <https://www.wikidata.org/wiki/Q1341386>,
+        "Arthur Batiste",
+        "Corinne Batiste",
+        "Fer(di)nand Batiste",
+        "Henry Batiste",
+        "Miriam Batiste",
+        "Norman Batiste" .
+
+"Arthur Batiste" ns1:childOf "Irma Batiste",
+        "Walter Batiste" ;
+    ns1:siblingOf <https://www.wikidata.org/wiki/Q1341386>,
+        "Alma Batiste",
+        "Corinne Batiste",
+        "Fer(di)nand Batiste",
+        "Henry Batiste",
+        "Miriam Batiste",
+        "Norman Batiste" .
+
+"Corinne Batiste" ns1:childOf "Irma Batiste",
+        "Walter Batiste" ;
+    ns1:siblingOf <https://www.wikidata.org/wiki/Q1341386>,
+        "Alma Batiste",
+        "Arthur Batiste",
+        "Fer(di)nand Batiste",
+        "Henry Batiste",
+        "Miriam Batiste",
+        "Norman Batiste" .
+
+"Feliciana Mary Jolivette Batiste" ns1:childOf "Joseph Charles Jolivette",
+        "Virginia Edwards" .
+
+"Fer(di)nand Batiste" ns1:childOf "Irma Batiste",
+        "Walter Batiste" ;
+    ns1:siblingOf <https://www.wikidata.org/wiki/Q1341386>,
+        "Alma Batiste",
+        "Arthur Batiste",
+        "Corinne Batiste",
+        "Henry Batiste",
+        "Miriam Batiste",
+        "Norman Batiste" .
+
+"Henry Batiste" ns1:childOf "Irma Batiste",
+        "Walter Batiste" ;
+    ns1:siblingOf <https://www.wikidata.org/wiki/Q1341386>,
+        "Alma Batiste",
+        "Arthur Batiste",
+        "Corinne Batiste",
+        "Fer(di)nand Batiste",
+        "Miriam Batiste",
+        "Norman Batiste" .
+
+"Irma Batiste" ns1:parentOf <https://www.wikidata.org/wiki/Q1341386>,
+        "Alma Batiste",
+        "Arthur Batiste",
+        "Corinne Batiste",
+        "Fer(di)nand Batiste",
+        "Henry Batiste",
+        "Miriam Batiste",
+        "Norman Batiste" ;
+    ns1:spouseOf "Walter Batiste" .
+
+"Norman Batiste" ns1:childOf "Irma Batiste",
+        "Walter Batiste" ;
+    ns1:siblingOf <https://www.wikidata.org/wiki/Q1341386>,
+        "Alma Batiste",
+        "Arthur Batiste",
+        "Corinne Batiste",
+        "Fer(di)nand Batiste",
+        "Henry Batiste",
+        "Miriam Batiste" .
+
+"Milton Sr. Batiste" ns1:childOf "Elizabeth Baptiste",
+        "Scipio Baptiste" ;
+    ns1:parentOf "Marlene Batiste",
+        "Martha Batiste",
+        "Mary Batiste",
+        "Maurice Scipio Batiste",
+        "Merial Batiste",
+        "Milton Joseph Jr. Batiste",
+        "Miriam Batiste" ;
+    ns1:siblingOf "Felicia Boykins" .
+
 <https://www.wikidata.org/wiki/Q1341386> ns1:childOf "Irma Batiste",
         "Walter Batiste" ;
     ns1:parentOf "Erica Batiste",
@@ -88,7 +410,21 @@
         "Miriam Batiste",
         "Norman Batiste" .
 
-<https://www.wikidata.org/wiki/Q367071> ns1:childOf "Edgar Batiste",
-        "Lilly Brown" ;
-    ns1:spouseOf "Edith Chatters Batiste" .
+"Miriam Batiste" ns1:childOf "Feliciana Mary Jolivette Batiste",
+        "Irma Batiste",
+        "Milton Sr. Batiste",
+        "Walter Batiste" ;
+    ns1:siblingOf <https://www.wikidata.org/wiki/Q1341386>,
+        "Alma Batiste",
+        "Arthur Batiste",
+        "Corinne Batiste",
+        "Fer(di)nand Batiste",
+        "Henry Batiste",
+        "Marlene Batiste",
+        "Martha Batiste",
+        "Mary Batiste",
+        "Maurice Scipio Batiste",
+        "Merial Batiste",
+        "Milton Joseph Jr. Batiste",
+        "Norman Batiste" .
 

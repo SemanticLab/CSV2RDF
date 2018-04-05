@@ -133,6 +133,61 @@ with open("Batiste Information Resources - Genealogy Data.csv") as f:
 
 
 
+        elif identifier == "":
+            label = Literal(label)
+
+            if father_id != "":
+                father_id = URIRef(father_id)
+                g.add((label, child_of, father_id))
+
+            elif father_id == "":
+                if father_lbl != "":
+                    g.add((label, child_of, Literal(father_lbl)))
+
+            if mother_id != "":
+                mother_id = URIRef(mother_id)
+                g.add((label, child_of, mother_id))
+
+            elif mother_id == "":
+                if mother_lbl != "":
+                    g.add((label, child_of, Literal(mother_lbl)))
+
+            if sibling_id != "":
+                sibling_id = URIRef(sibling_id)
+                g.add((label, sibling_of, sibling_id))
+
+            elif sibling_id == "":
+                if sibling_lbl != "":
+                    g.add((label, sibling_of, Literal(sibling_lbl)))
+
+            if child_id != "":
+                child_id = URIRef(child_id)
+                g.add((label, parent_of, child_id))
+
+            elif child_id == "":
+                if child_lbl != "":
+                    g.add((label, parent_of, Literal(child_lbl)))
+
+            if adopted_child_id != "":
+                adopted_child_id = URIRef(adopted_child_id)
+                g.add((label, parent_of, adopted_child_id))
+                g.add((adopted_child_id, adopted_son_of, label))
+
+            elif adopted_child_id == "":
+                if adopted_child_lbl != "":
+                    g.add((label, parent_of, Literal(adopted_child_lbl)))
+                    g.add((Literal(adopted_child_id), adopted_son_of, label))
+
+            if spouse_id != "":
+                spouse_id = URIRef(spouse_id)
+                g.add((label, spouse_of, spouse_id))
+
+            elif spouse_id == "":
+                if spouse_lbl != "":
+                    g.add((label, spouse_of, Literal(spouse_lbl)))
+
+
+
 
             # if mother_id != "":
             #     g.add((identifier, son_of, mother_id))
