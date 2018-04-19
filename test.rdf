@@ -1,494 +1,498 @@
-@prefix ns1: <http://dbpedia.org/ontology/> .
-@prefix ns2: <http://vocab.org/relationship/> .
+@prefix ns1: <http://purl.org/vocab/relationship/> .
+@prefix ns2: <http://schema.org/> .
+@prefix ns3: <http://purl.org/ontology/mo/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://id.loc.gov/authorities/names/no2007086020> ns1:birthDate "abt 1969" ;
-    ns1:instrument "Percussion (congas, djembe)" ;
-    ns2:childOf "Estella Curtis Batiste",
-        "John Jeffrey Batiste" ;
-    ns2:parentOf "Damon Jr. (D.J.) Batiste",
-        "Leileh Marie Batiste",
-        "Nala Jean Batiste" ;
-    ns2:spouseOf "Johana Batiste" .
-
-<http://id.loc.gov/authorities/names/no2009105135> ns1:birthDate "1965-12-12" ;
-    ns1:instrument "Drums" ;
-    ns2:childOf "David Batiste" ;
-    ns2:siblingOf "Damon Batiste",
-        "Jamal Batiste",
-        "Ryan Batiste" .
-
-<http://id.loc.gov/authorities/names/no2010043071> ns1:birthDate "1986-11-11" ;
-    ns1:instrument "Drums",
+<http://id.loc.gov/authorities/names/no2010043071> ns3:primary_instrument "Drums",
         "Melodica",
         "Piano",
         "Vocals" ;
-    ns2:childOf "Michael Batiste" ;
-    ns2:siblingOf "Michael Jr. (Lil Mike) Batiste" .
+    ns1:childOf <https://www.discogs.com/artist/5191482-Michael-Batiste> ;
+    ns1:siblingOf <http://linkedjazz.org/resource/Michael_Batiste_Jr(Brother_of_Jon_Batiste)> ;
+    ns2:birthDate "1986-11-11" .
 
-<http://id.loc.gov/authorities/names/no2011128050> ns1:instrument "Keytar",
-        "Piano" ;
-    ns2:childOf "Estella Curtis Batiste",
-        "John Jeffrey Batiste" ;
-    ns2:parentOf "Damon Batiste",
-        "David Russell Jr. (Russell) Batiste" ;
-    ns2:siblingOf "Damon Batiste",
-        "Michael Batiste",
-        "Paul Batiste",
-        "Peter Batiste" .
+<http://linkedjazz.org/resource/Arthur_batiste(Brother_of_Lionel_Batiste)> ns1:childOf <http://linkedjazz.org/resource/Irma_Batiste(Mother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Walter_Louis_Batiste(Father_of_Lionel_Batiste)> ;
+    ns1:siblingOf <https://www.wikidata.org/wiki/Q1341386> ;
+    ns2:birthDate "abt 1922" .
 
-<http://id.loc.gov/authorities/names/no99007541> ns1:birthDate "1934-09-05" ;
-    ns1:instrument "Trumpet" ;
-    ns2:childOf "Feliciana Mary Jolivette Batiste",
-        "Milton Sr. Batiste" ;
-    ns2:siblingOf "Marlene Batiste",
-        "Martha Batiste",
-        "Mary Batiste",
-        "Maurice Scipio Batiste",
-        "Merial Batiste",
-        "Miriam Batiste" .
+<http://linkedjazz.org/resource/Travis_Batiste(Son_of_Paul_Batiste)> ns1:childOf <https://www.discogs.com/artist/1239283-Paul-Batiste> .
 
-<https://musicbrainz.org/artist/32d4b375-1adc-4a75-b6c7-560f5922dcde> ns1:birthDate "1929-1-15" ;
-    ns1:deathDate "2005-7-7" ;
-    ns2:childOf "Alsam/Willie Battiste",
-        "Hazel Battiste" ;
-    ns2:siblingOf "Lloyd Battiste",
-        "Warren Battiste",
-        "Westley Battiste" .
+"" <http://cedric.cnam.fr/isid/ontologies/PersonLink.owl#3.1.2.1> <http://linkedjazz.org/resource/Harold_Battiste_Sr(Father_of_Harold_Battiste)>,
+        <http://linkedjazz.org/resource/Pearl_Wilmer_Booker_Battiste(Mother_of_Harold_Battiste)> .
 
-<https://musicbrainz.org/artist/76be3c27-b3fe-4a06-a76d-96f79663195b> ns1:birthDate "1934-02-05" ;
-    ns1:instrument "Vocals" ;
-    ns2:spouseOf <https://www.wikidata.org/wiki/Q367071> .
+<http://linkedjazz.org/resource/Joseph_Charles_Jolivette(Grandfather_of_Milton_Batiste)> ns1:parentOf <http://linkedjazz.org/resource/Feliciana_Mary_Jolivette_Batiste(Mother_of_Milton_Batiste)> .
 
-<https://www.discogs.com/artist/1239283-Paul-Batiste> ns1:instrument "Electric Guitar" ;
-    ns2:childOf "Estella Curtis Batiste",
-        "John Jeffrey Batiste" ;
-    ns2:parentOf "Travis Batiste" ;
-    ns2:siblingOf "Damon Batiste",
-        "David Batiste",
-        "Michael Batiste",
-        "Peter Batiste" .
+<http://linkedjazz.org/resource/Michael_Batiste_Jr(Brother_of_Jon_Batiste)> ns1:childOf <https://www.discogs.com/artist/5191482-Michael-Batiste> ;
+    ns1:siblingOf <https://www.wikidata.org/wiki/Q6272528> .
 
-<https://www.discogs.com/artist/5191482-Michael-Batiste> ns1:instrument "Bass Guitar" ;
-    ns2:childOf "Estella Curtis Batiste",
-        "John Jeffrey Batiste" ;
-    ns2:parentOf <https://www.wikidata.org/wiki/Q6272528> ;
-    ns2:siblingOf "Damon Batiste",
-        "David Batiste",
-        "Paul Batiste",
-        "Peter Batiste" .
+<http://linkedjazz.org/resource/Peter_Batiste_Jr(Son_of_Peter_Batiste)> ns1:childOf <https://www.discogs.com/artist/5191485-Peter-Batiste> ;
+    ns1:siblingOf <http://linkedjazz.org/resource/Quanna_Batiste(Daughter_of_Peter_Batiste)> .
 
-<https://www.discogs.com/artist/5191485-Peter-Batiste> ns1:instrument "Vocals" ;
-    ns2:childOf "Estella Curtis Batiste",
-        "John Jeffrey Batiste" ;
-    ns2:siblingOf "Damon Batiste",
-        "David Batiste",
-        "Michael Batiste",
-        "Paul Batiste" .
+<http://linkedjazz.org/resource/Quanna_Batiste(Daughter_of_Peter_Batiste)> ns1:childOf <https://www.discogs.com/artist/5191485-Peter-Batiste> ;
+    ns1:siblingOf <http://linkedjazz.org/resource/Peter_Batiste_Jr(Son_of_Peter_Batiste)> .
 
-<https://www.wikidata.org/wiki/Q1327228> ns1:birthDate "1931-10-28" ;
-    ns1:deathDate "2015-06-19" ;
-    ns2:childOf "Harold Sr. Battiste",
-        "Pearl WIlmer Booker Battiste" .
+<http://linkedjazz.org/resource/Virginia_Edwards(Grandmother_of_Milton_Batiste)> ns1:parentOf <http://linkedjazz.org/resource/Feliciana_Mary_Jolivette_Batiste(Mother_of_Milton_Batiste)> ;
+    ns2:birthDate "abt 1883" .
 
-"" <http://cedric.cnam.fr/isid/ontologies/PersonLink.owl#3.1.2.1> "Harold Sr. Battiste",
-        "Pearl Wilmer Booker Battiste" .
+<https://musicbrainz.org/artist/76be3c27-b3fe-4a06-a76d-96f79663195b> ns3:primary_instrument "Vocals" ;
+    ns1:spouseOf <https://www.wikidata.org/wiki/Q367071> ;
+    ns2:birthDate "1934-02-05" .
 
-"Alsam/WIllie Battiste" ns1:birthDate "abt 1904" ;
-    ns2:parentOf "Earl Battiste",
-        "Lloyd Battiste",
-        "Warren Battiste",
-        "Westley Battiste" ;
-    ns2:spouseOf "Hazel Battiste" .
+<http://linkedjazz.org/resource/Carrie_Battiste(Aunt_of_Harold_Battiste)> ns1:childOf <http://linkedjazz.org/resource/Eugene_Baptiste(Grandfather_of_Harold_Battiste)> ;
+    ns1:parentOf "Alvin Battiste" ;
+    ns1:siblingOf <http://linkedjazz.org/resource/Courie_Batiste(Uncle_of_Harold_Battiste)>,
+        <http://linkedjazz.org/resource/Harold_Battiste_Sr(Father_of_Harold_Battiste)> ;
+    ns2:deathDate "abt 1930" .
 
-"Damon Jr. Batiste" ns2:childOf "Damon Batiste",
-        "Johana Batiste" .
+<http://linkedjazz.org/resource/Damon_Batiste_Jr(Son_of_Damon_Batiste)> ns1:childOf <http://id.loc.gov/authorities/names/no2007086020>,
+        <http://linkedjazz.org/resource/Johana_Batiste(Wife_of_Damon_Batiste)> .
 
-"Hazel Batiste" ns2:parentOf "Lloyd Battiste",
-        "Westley Battiste" .
+<http://linkedjazz.org/resource/Edgar_Batiste(Father_of_Alvin_Batiste)> ns1:parentOf <https://www.wikidata.org/wiki/Q367071> ;
+    ns1:spouseOf <http://linkedjazz.org/resource/LillyBrown(Mother_of_Alvin_Batiste)> .
 
-"Karen Batiste Williams" ns2:childOf <https://www.wikidata.org/wiki/Q1341386> ;
-    ns2:siblingOf "Erica Batiste",
-        "Lionel Paul Jr. Batiste",
-        "Loretta B. Smith",
-        "Malika Batiste",
-        "Tanya Batiste",
-        "Vanessa B. Laurent" .
+<http://linkedjazz.org/resource/Eugene_Baptiste(Grandfather_of_Harold_Battiste)> ns1:parentOf <http://linkedjazz.org/resource/Carrie_Battiste(Aunt_of_Harold_Battiste)>,
+        <http://linkedjazz.org/resource/Courie_Batiste(Uncle_of_Harold_Battiste)>,
+        <http://linkedjazz.org/resource/Harold_Battiste_Sr(Father_of_Harold_Battiste)> ;
+    ns2:deathDate "abt 1935" .
 
-"Loretta Batiste Smith" ns2:childOf <https://www.wikidata.org/wiki/Q1341386> ;
-    ns2:siblingOf "Erica Batiste",
-        "Karen B. Williams",
-        "Lionel Paul Jr. Batiste",
-        "Malika Batiste",
-        "Tanya Batiste",
-        "Vanessa B. Laurent" .
-
-"Michael Jr. Batiste" ns2:childOf "Michael Batiste" ;
-    ns2:siblingOf <https://www.wikidata.org/wiki/Q6272528> .
-
-"Peter Jr. Batiste" ns2:childOf "Peter Batiste" ;
-    ns2:siblingOf "Quanna Batiste" .
-
-"Vanessa Batiste Laurent" ns2:childOf <https://www.wikidata.org/wiki/Q1341386> ;
-    ns2:siblingOf "Erica Batiste",
-        "Karen B. Williams",
-        "Lionel Paul Jr. Batiste",
-        "Loretta B. Smith",
-        "Malika Batiste",
-        "Tanya Batiste" .
-
-"Walter Louis Batiste" ns1:birthDate "1889-09-17" ;
-    ns2:parentOf <https://www.wikidata.org/wiki/Q1341386>,
-        "Alma Batiste",
-        "Arthur Batiste",
-        "Corinne Batiste",
-        "Fer(di)nand Batiste",
-        "Henry Batiste",
-        "Miriam Batiste",
-        "Norman Batiste" ;
-    ns2:spouseOf "Irma Batiste" .
-
-"Warren Joseph Battiste" ns1:birthDate "1925-11-8" ;
-    ns2:childOf "Alsam/Willie Battiste",
-        "Hazel Battiste" ;
-    ns2:siblingOf "Earl Battiste",
-        "Lloyd Battiste",
-        "Westley Battiste" .
-
-"Joseph Charles Jolivette" ns2:parentOf "Feliciana Mary Jolivette Batiste" .
-
-"Quanna Batiste" ns2:childOf "Peter Batiste" ;
-    ns2:siblingOf "Peter Jr. (Peter Rabbit) Batiste" .
-
-"Travis Batiste" ns2:childOf "Paul Batiste" .
-
-"Virginia Edwards" ns1:birthDate "abt 1883" ;
-    ns2:parentOf "Feliciana Mary Jolivette Batiste" .
-
-"Carrie Battiste" ns1:deathDate "abt 1930" ;
-    ns2:childOf "Eugene Baptiste" ;
-    ns2:parentOf "Alvin Battiste" ;
-    ns2:siblingOf "Courie Battiste",
-        "Harold Sr. Battiste" .
-
-"Edgar Batiste" ns2:parentOf <https://www.wikidata.org/wiki/Q367071> ;
-    ns2:spouseOf "Lilly Brown" .
-
-"Eugene Baptiste" ns1:deathDate "abt 1935" ;
-    ns2:parentOf "Carrie Battiste",
-        "Courie Battiste",
-        "Harold Sr. Battiste" .
-
-"Jamal Batiste" ns1:instrument "Bass",
+<http://linkedjazz.org/resource/Jamal_Batiste(Cousin_of_Jon_Batiste)> ns3:primary_instrument "Bass",
         "Keyboard",
         "Vocals" ;
-    ns2:childOf "David Batiste" ;
-    ns2:siblingOf "Damon Batiste",
-        "David Russell Jr. (Russell) Batiste",
-        "Ryan Batiste" .
+    ns1:childOf <http://id.loc.gov/authorities/names/no2011128050> ;
+    ns1:siblingOf <http://id.loc.gov/authorities/names/no2007086020>,
+        <http://id.loc.gov/authorities/names/no2009105135>,
+        <http://linkedjazz.org/resource/Ryan_Batiste(Cousin_of_Jon_Batiste)> .
 
-"Leileh Marie Batiste" ns2:childOf "Damon Batiste",
-        "Johana Batiste" .
+<http://linkedjazz.org/resource/Leileh_Marie_Batiste(Daughter_of_Damon_Batiste)> ns1:childOf <http://id.loc.gov/authorities/names/no2007086020>,
+        <http://linkedjazz.org/resource/Johana_Batiste(Wife_of_Damon_Batiste)> .
 
-"Lilly Brown" ns2:parentOf <https://www.wikidata.org/wiki/Q367071> ;
-    ns2:spouseOf "Edgar Batiste" .
+<http://linkedjazz.org/resource/LillyBrown(Mother_of_Alvin_Batiste)> ns1:parentOf <https://www.wikidata.org/wiki/Q367071> ;
+    ns1:spouseOf <http://linkedjazz.org/resource/Edgar_Batiste(Father_of_Alvin_Batiste)> .
 
-"Mary Booker" ns2:parentOf "Pearl Wilmer Booker Battiste" ;
-    ns2:spouseOf "Wilbert Booker" .
+<http://linkedjazz.org/resource/Mary_Booker(Grandmother_of_Harold_Battiste)> ns1:parentOf <http://linkedjazz.org/resource/Pearl_Wilmer_Booker_Battiste(Mother_of_Harold_Battiste)> ;
+    ns1:spouseOf <http://linkedjazz.org/resource/Wilbert_Booker(Grandfather_of_Harold_Battiste)> .
 
-"Nala Jean Batiste" ns2:childOf "Damon Batiste",
-        "Johana Batiste" .
+<http://linkedjazz.org/resource/Nala_Jean_Batiste(Daughter_of_Damon_Batiste)> ns1:childOf <http://id.loc.gov/authorities/names/no2007086020>,
+        <http://linkedjazz.org/resource/Johana_Batiste(Wife_of_Damon_Batiste)> .
 
-"Ryan Batiste" ns1:instrument "Drums" ;
-    ns2:childOf "David Batiste" ;
-    ns2:siblingOf "Damon Batiste",
-        "David Russell Jr. (Russell) Batiste",
-        "Jamal Batiste" .
+<http://linkedjazz.org/resource/Ryan_Batiste(Cousin_of_Jon_Batiste)> ns3:primary_instrument "Drums" ;
+    ns1:childOf <http://id.loc.gov/authorities/names/no2011128050> ;
+    ns1:siblingOf <http://id.loc.gov/authorities/names/no2007086020>,
+        <http://id.loc.gov/authorities/names/no2009105135>,
+        <http://linkedjazz.org/resource/Jamal_Batiste(Cousin_of_Jon_Batiste)> .
 
-"Wilbert Booker" ns2:parentOf "Pearl Wilmer Booker Battiste" ;
-    ns2:spouseOf "Mary Booker" .
+<http://linkedjazz.org/resource/Wilbert_Booker(Grandfather_of_Harold_Battiste)> ns1:parentOf <http://linkedjazz.org/resource/Pearl_Wilmer_Booker_Battiste(Mother_of_Harold_Battiste)> ;
+    ns1:spouseOf <http://linkedjazz.org/resource/Mary_Booker(Grandmother_of_Harold_Battiste)> .
 
-<https://www.wikidata.org/wiki/Q367071> ns1:birthDate "1932-11-07" ;
-    ns1:deathDate "2007-05-06" ;
-    ns1:instrument "Clarinet" ;
-    ns2:childOf "Edgar Batiste",
-        "Lilly Brown" ;
-    ns2:spouseOf "Edith Chatters Batiste" .
+<https://www.wikidata.org/wiki/Q1327228> ns1:childOf <http://linkedjazz.org/resource/Harold_Battiste_Sr(Father_of_Harold_Battiste)>,
+        <http://linkedjazz.org/resource/Pearl_Wilmer_Booker_Battiste(Mother_of_Harold_Battiste)> ;
+    ns2:birthDate "1931-10-28" ;
+    ns2:deathDate "2015-06-19" .
 
-"Courie Battiste" ns1:birthDate "abt 1900" ;
-    ns2:childOf "Eugene Battiste" ;
-    ns2:siblingOf "Courie Battiste",
-        "Harold Sr. Battiste" .
+<http://id.loc.gov/authorities/names/no2009105135> ns3:primary_instrument "Drums" ;
+    ns1:childOf <http://id.loc.gov/authorities/names/no2011128050> ;
+    ns1:siblingOf <http://id.loc.gov/authorities/names/no2007086020>,
+        <http://linkedjazz.org/resource/Jamal_Batiste(Cousin_of_Jon_Batiste)>,
+        <http://linkedjazz.org/resource/Ryan_Batiste(Cousin_of_Jon_Batiste)> ;
+    ns2:birthDate "1965-12-12" .
 
-"Elizabeth Baptiste" ns2:parentOf "Felicia Boykins",
-        "Milton Sr. Batiste" ;
-    ns2:spouseOf "Scipio Baptiste" .
+<http://linkedjazz.org/resource/Alsam_or_Willie_Battiste(Father_of_Warren_Battiste)> ns1:parentOf <http://linkedjazz.org/resource/Warren_Joseph_Battiste>,
+        <https://musicbrainz.org/artist/32d4b375-1adc-4a75-b6c7-560f5922dcde>,
+        "Lloyd Battiste",
+        "Westley Battiste" ;
+    ns1:spouseOf <http://linkedjazz.org/resource/Hazel_Battiste(Mother_of_Warren_Battiste)> ;
+    ns2:birthDate "abt 1904" .
 
-"Felicia Boykins" ns1:birthDate "abt 1894" ;
-    ns1:deathDate "1962-09-16" ;
-    ns1:instrument "Vocals" ;
-    ns2:childOf "Elizabeth Baptiste",
-        "Scipio Baptiste" ;
-    ns2:siblingOf "Milton Sr. Batiste" ;
-    ns2:spouseOf "Earl Boykins" .
+<http://linkedjazz.org/resource/Courie_Batiste(Uncle_of_Harold_Battiste)> ns1:childOf "Eugene Battiste" ;
+    ns1:siblingOf <http://linkedjazz.org/resource/Courie_Batiste(Uncle_of_Harold_Battiste)>,
+        <http://linkedjazz.org/resource/Harold_Battiste_Sr(Father_of_Harold_Battiste)> ;
+    ns2:birthDate "abt 1900" .
 
-"Hazel Battiste" ns1:birthDate "abt 1904" ;
-    ns2:parentOf "Earl Battiste",
-        "Warren Battiste" ;
-    ns2:spouseOf "Alsam/Willie Battiste" .
+<http://linkedjazz.org/resource/Elizabeth_Baptiste(Grandmother_of_Milton_Batiste)> ns1:parentOf <http://linkedjazz.org/resource/Milton_Batiste_Sr(Father_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Felicia_Boykins(Aunt_of_Milton_Batiste)> ;
+    ns1:spouseOf <http://linkedjazz.org/resource/Scipio_Baptiste(Grandfather_of_Milton_Batiste)> .
 
-"Scipio Baptiste" ns1:instrument "Double Bass" ;
-    ns2:parentOf "Felicia Boykins",
-        "Milton Sr. Batiste" ;
-    ns2:spouseOf "Elizabeth Baptiste" .
+<http://linkedjazz.org/resource/Felicia_Boykins(Aunt_of_Milton_Batiste)> ns3:primary_instrument "Vocals" ;
+    ns1:childOf <http://linkedjazz.org/resource/Elizabeth_Baptiste(Grandmother_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Scipio_Baptiste(Grandfather_of_Milton_Batiste)> ;
+    ns1:siblingOf <http://linkedjazz.org/resource/Milton_Batiste_Sr(Father_of_Milton_Batiste)> ;
+    ns1:spouseOf "Earl Boykins" ;
+    ns2:birthDate "abt 1894" ;
+    ns2:deathDate "1962-09-16" .
 
-"Johana Batiste" ns2:parentOf "Damon Jr. (D.J.) Batiste",
-        "Leileh Marie Batiste",
-        "Nala Jean Batiste" ;
-    ns2:spouseOf "Damon Batiste" .
+<http://linkedjazz.org/resource/Hazel_Battiste(Mother_of_Warren_Battiste)> ns1:parentOf <http://linkedjazz.org/resource/Warren_Joseph_Battiste>,
+        <https://musicbrainz.org/artist/32d4b375-1adc-4a75-b6c7-560f5922dcde>,
+        "Lloyd Battiste",
+        "Westley Battiste" ;
+    ns1:spouseOf <http://linkedjazz.org/resource/Alsam_or_Willie_Battiste(Father_of_Warren_Battiste)> ;
+    ns2:birthDate "abt 1904" .
 
-"Pearl Wilmer Booker Battiste" ns1:birthDate "1900" ;
-    ns1:deathDate "1957" ;
-    ns2:childOf "Mary Booker",
-        "Wilbert Booker" ;
-    ns2:parentOf "Alvin Battiste",
-        "Harold Raymond Jr. Battiste" ;
-    ns2:spouseOf "Harold Sr. Battiste" .
+<http://linkedjazz.org/resource/Scipio_Baptiste(Grandfather_of_Milton_Batiste)> ns3:primary_instrument "Double Bass" ;
+    ns1:parentOf <http://linkedjazz.org/resource/Milton_Batiste_Sr(Father_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Felicia_Boykins(Aunt_of_Milton_Batiste)> ;
+    ns1:spouseOf <http://linkedjazz.org/resource/Elizabeth_Baptiste(Grandmother_of_Milton_Batiste)> .
 
-"Estella Curtis Batiste" ns1:birthDate "1915-06-09" ;
-    ns1:deathDate "2017-09-06" ;
-    ns1:instrument "Piano" ;
-    ns2:parentOf "David Batiste",
-        "Michael Batiste",
-        "Paul Batiste",
-        "Peter Batiste" ;
-    ns2:spouseOf "John Jeffrey Batiste" .
+<http://linkedjazz.org/resource/Warren_Joseph_Battiste> ns1:childOf <http://linkedjazz.org/resource/Alsam_or_Willie_Battiste(Father_of_Warren_Battiste)>,
+        <http://linkedjazz.org/resource/Hazel_Battiste(Mother_of_Warren_Battiste)> ;
+    ns1:siblingOf <https://musicbrainz.org/artist/32d4b375-1adc-4a75-b6c7-560f5922dcde>,
+        "Lloyd Battiste",
+        "Westley Battiste" ;
+    ns2:birthDate "1925-11-8" .
 
-"Harold Sr. Battiste" ns1:birthDate "1903" ;
-    ns1:deathDate "1957" ;
-    ns2:childOf "Eugene Baptiste" ;
-    ns2:parentOf "Alvin Battiste",
-        "Harold Raymond Jr. Battiste" ;
-    ns2:siblingOf "Carrie Battiste" ;
-    ns2:spouseOf "Pearl Wilmer Booker Battiste" .
+<https://musicbrainz.org/artist/32d4b375-1adc-4a75-b6c7-560f5922dcde> ns1:childOf <http://linkedjazz.org/resource/Alsam_or_Willie_Battiste(Father_of_Warren_Battiste)>,
+        <http://linkedjazz.org/resource/Hazel_Battiste(Mother_of_Warren_Battiste)> ;
+    ns1:siblingOf <http://linkedjazz.org/resource/Warren_Joseph_Battiste>,
+        "Lloyd Battiste",
+        "Westley Battiste" ;
+    ns2:birthDate "1929-1-15" ;
+    ns2:deathDate "2005-7-7" .
 
-"John Jeffrey Batiste" ns1:birthDate "abt 1913" ;
-    ns1:deathDate "2012-06-27" ;
-    ns2:parentOf "David Batiste",
-        "Michael Batiste",
-        "Paul Batiste",
-        "Peter Batiste" ;
-    ns2:spouseOf "Estella Curtis Batiste" .
+<https://www.wikidata.org/wiki/Q367071> ns3:primary_instrument "Clarinet" ;
+    ns1:childOf <http://linkedjazz.org/resource/Edgar_Batiste(Father_of_Alvin_Batiste)>,
+        <http://linkedjazz.org/resource/LillyBrown(Mother_of_Alvin_Batiste)> ;
+    ns1:spouseOf <https://musicbrainz.org/artist/76be3c27-b3fe-4a06-a76d-96f79663195b> ;
+    ns2:birthDate "1932-11-07" ;
+    ns2:deathDate "2007-05-06" .
 
-"Erica Batiste" ns2:childOf <https://www.wikidata.org/wiki/Q1341386> ;
-    ns2:siblingOf "Karen B. Williams",
-        "Lionel Paul Jr. Batiste",
-        "Loretta B. Smith",
-        "Malika Batiste",
-        "Tanya Batiste",
-        "Vanessa B. Laurent" .
+<http://linkedjazz.org/resource/Johana_Batiste(Wife_of_Damon_Batiste)> ns1:parentOf <http://linkedjazz.org/resource/Damon_Batiste_Jr(Son_of_Damon_Batiste)>,
+        <http://linkedjazz.org/resource/Leileh_Marie_Batiste(Daughter_of_Damon_Batiste)>,
+        <http://linkedjazz.org/resource/Nala_Jean_Batiste(Daughter_of_Damon_Batiste)> ;
+    ns1:spouseOf <http://id.loc.gov/authorities/names/no2007086020> .
 
-"Lionel Paul Jr. Batiste" ns2:childOf <https://www.wikidata.org/wiki/Q1341386> ;
-    ns2:siblingOf "Erica Batiste",
-        "Karen B. Williams",
-        "Loretta B. Smith",
-        "Malika Batiste",
-        "Tanya Batiste",
-        "Vanessa B. Laurent" .
+<http://linkedjazz.org/resource/Pearl_Wilmer_Booker_Battiste(Mother_of_Harold_Battiste)> ns1:childOf <http://linkedjazz.org/resource/Mary_Booker(Grandmother_of_Harold_Battiste)>,
+        <http://linkedjazz.org/resource/Wilbert_Booker(Grandfather_of_Harold_Battiste)> ;
+    ns1:parentOf <https://www.wikidata.org/wiki/Q1327228>,
+        "Alvin Battiste" ;
+    ns1:spouseOf <http://linkedjazz.org/resource/Harold_Battiste_Sr(Father_of_Harold_Battiste)> ;
+    ns2:birthDate "1900" ;
+    ns2:deathDate "1957" .
 
-"Malika Batiste" ns2:childOf <https://www.wikidata.org/wiki/Q1341386> ;
-    ns2:siblingOf "Erica Batiste",
-        "Karen B. Williams",
-        "Lionel Paul Jr. Batiste",
-        "Loretta B. Smith",
-        "Tanya Batiste",
-        "Vanessa B. Laurent" .
+<http://linkedjazz.org/resource/Estella_Curtis_Batiste(Grandmother_of_Jon_Batiste)> ns3:primary_instrument "Piano" ;
+    ns1:parentOf <http://id.loc.gov/authorities/names/no2011128050>,
+        <https://www.discogs.com/artist/1239283-Paul-Batiste>,
+        <https://www.discogs.com/artist/5191482-Michael-Batiste>,
+        <https://www.discogs.com/artist/5191485-Peter-Batiste> ;
+    ns1:spouseOf <http://linkedjazz.org/resource/John_Jeffrey_Batiste(Grandfather_of_Jon_Batiste)> ;
+    ns2:birthDate "1915-06-09" ;
+    ns2:deathDate "2017-09-06" .
 
-"Marlene Batiste" ns2:childOf "Feliciana Mary Jolivette Batiste",
-        "Milton Sr. Batiste" ;
-    ns2:siblingOf "Martha Batiste",
-        "Mary Batiste",
-        "Maurice Scipio Batiste",
-        "Merial Batiste",
-        "Milton Joseph Jr. Batiste",
-        "Miriam Batiste" .
+<http://linkedjazz.org/resource/Harold_Battiste_Sr(Father_of_Harold_Battiste)> ns1:childOf <http://linkedjazz.org/resource/Eugene_Baptiste(Grandfather_of_Harold_Battiste)> ;
+    ns1:parentOf <https://www.wikidata.org/wiki/Q1327228>,
+        "Alvin Battiste" ;
+    ns1:siblingOf <http://linkedjazz.org/resource/Carrie_Battiste(Aunt_of_Harold_Battiste)> ;
+    ns1:spouseOf <http://linkedjazz.org/resource/Pearl_Wilmer_Booker_Battiste(Mother_of_Harold_Battiste)> ;
+    ns2:birthDate "1903" ;
+    ns2:deathDate "1957" .
 
-"Martha Batiste" ns2:childOf "Feliciana Mary Jolivette Batiste",
-        "Milton Sr. Batiste" ;
-    ns2:siblingOf "Marlene Batiste",
-        "Mary Batiste",
-        "Maurice Scipio Batiste",
-        "Merial Batiste",
-        "Milton Joseph Jr. Batiste",
-        "Miriam Batiste" .
+<http://linkedjazz.org/resource/John_Jeffrey_Batiste(Grandfather_of_Jon_Batiste)> ns1:parentOf <http://id.loc.gov/authorities/names/no2011128050>,
+        <https://www.discogs.com/artist/1239283-Paul-Batiste>,
+        <https://www.discogs.com/artist/5191482-Michael-Batiste>,
+        <https://www.discogs.com/artist/5191485-Peter-Batiste> ;
+    ns1:spouseOf <http://linkedjazz.org/resource/Estella_Curtis_Batiste(Grandmother_of_Jon_Batiste)> ;
+    ns2:birthDate "abt 1913" ;
+    ns2:deathDate "2012-06-27" .
 
-"Mary Batiste" ns2:childOf "Feliciana Mary Jolivette Batiste",
-        "Milton Sr. Batiste" ;
-    ns2:siblingOf "Marlene Batiste",
-        "Martha Batiste",
-        "Maurice Scipio Batiste",
-        "Merial Batiste",
-        "Milton Joseph Jr. Batiste",
-        "Miriam Batiste" .
+<http://linkedjazz.org/resource/Merial_Batiste(Sister_of_Milton_Batiste)> ns1:childOf <http://linkedjazz.org/resource/Milton_Batiste_Sr(Father_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Feliciana_Mary_Jolivette_Batiste(Mother_of_Milton_Batiste)> ;
+    ns1:siblingOf <http://id.loc.gov/authorities/names/no99007541>,
+        <http://linkedjazz.org/resource/Marlene_Batiste(Sister_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Martha_Batiste(Sister_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Mary_Batiste(Sister_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Maurice_Scipio_Batiste(Brother_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Miriam_Batiste(Sister_of_Milton_Batiste)> .
 
-"Maurice Scipio Batiste" ns2:childOf "Feliciana Mary Jolivette Batiste",
-        "Milton Sr. Batiste" ;
-    ns2:siblingOf "Marlene Batiste",
-        "Martha Batiste",
-        "Mary Batiste",
-        "Merial Batiste",
-        "Milton Joseph Jr. Batiste",
-        "Miriam Batiste" .
+<https://www.discogs.com/artist/1239283-Paul-Batiste> ns3:primary_instrument "Electric Guitar" ;
+    ns1:childOf <http://linkedjazz.org/resource/Estella_Curtis_Batiste(Grandmother_of_Jon_Batiste)>,
+        <http://linkedjazz.org/resource/John_Jeffrey_Batiste(Grandfather_of_Jon_Batiste)> ;
+    ns1:parentOf <https://www.discogs.com/artist/5191485-Peter-Batiste> ;
+    ns1:siblingOf <http://id.loc.gov/authorities/names/no2007086020>,
+        <http://id.loc.gov/authorities/names/no2011128050>,
+        <https://www.discogs.com/artist/5191482-Michael-Batiste>,
+        <https://www.discogs.com/artist/5191485-Peter-Batiste> .
 
-"Merial Batiste" ns2:childOf "Feliciana Mary Jolivette Batiste",
-        "Milton Sr. Batiste" ;
-    ns2:siblingOf "Marlene Batiste",
-        "Martha Batiste",
-        "Mary Batiste",
-        "Maurice Scipio Batiste",
-        "Milton Joseph Jr. Batiste",
-        "Miriam Batiste" .
+<http://linkedjazz.org/resource/Erica_Batiste(Daughter_of_Lionel_Batiste)> ns1:childOf <https://www.wikidata.org/wiki/Q1341386> ;
+    ns1:siblingOf <http://linkedjazz.org/resource/Karen_Batiste_Williams(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Lionel_Paul_BatisteJr(Son_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Loretta_Batiste_Smith(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Malika_Batiste(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Tanya_Batiste(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Vanessa_Batiste_Laurent(Daughter_of_Lionel_Batiste)> .
 
-"Tanya Batiste" ns2:childOf <https://www.wikidata.org/wiki/Q1341386> ;
-    ns2:siblingOf "Erica Batiste",
-        "Karen B. Williams",
-        "Lionel Paul Jr. Batiste",
-        "Loretta B. Smith",
-        "Malika Batiste",
-        "Vanessa B. Laurent" .
+<http://linkedjazz.org/resource/Karen_Batiste_Williams(Daughter_of_Lionel_Batiste)> ns1:childOf <https://www.wikidata.org/wiki/Q1341386> ;
+    ns1:siblingOf <http://linkedjazz.org/resource/Erica_Batiste(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Lionel_Paul_BatisteJr(Son_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Loretta_Batiste_Smith(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Malika_Batiste(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Tanya_Batiste(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Vanessa_Batiste_Laurent(Daughter_of_Lionel_Batiste)> .
 
-"Alma Batiste" ns1:birthDate "abt 1915" ;
-    ns2:childOf "Irma Batiste",
-        "Walter Batiste" ;
-    ns2:siblingOf <https://www.wikidata.org/wiki/Q1341386>,
-        "Arthur Batiste",
-        "Corinne Batiste",
-        "Fer(di)nand Batiste",
-        "Henry Batiste",
-        "Miriam Batiste",
-        "Norman Batiste" .
+<http://linkedjazz.org/resource/Lionel_Paul_BatisteJr(Son_of_Lionel_Batiste)> ns1:childOf <https://www.wikidata.org/wiki/Q1341386> ;
+    ns1:siblingOf <http://linkedjazz.org/resource/Erica_Batiste(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Karen_Batiste_Williams(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Loretta_Batiste_Smith(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Malika_Batiste(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Tanya_Batiste(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Vanessa_Batiste_Laurent(Daughter_of_Lionel_Batiste)> .
 
-"Arthur Batiste" ns1:birthDate "abt 1922" ;
-    ns2:childOf "Irma Batiste",
-        "Walter Batiste" ;
-    ns2:siblingOf <https://www.wikidata.org/wiki/Q1341386>,
-        "Alma Batiste",
-        "Corinne Batiste",
-        "Fer(di)nand Batiste",
-        "Henry Batiste",
-        "Miriam Batiste",
-        "Norman Batiste" .
+<http://linkedjazz.org/resource/Loretta_Batiste_Smith(Daughter_of_Lionel_Batiste)> ns1:childOf <https://www.wikidata.org/wiki/Q1341386> ;
+    ns1:siblingOf <http://linkedjazz.org/resource/Erica_Batiste(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Karen_Batiste_Williams(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Lionel_Paul_BatisteJr(Son_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Malika_Batiste(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Tanya_Batiste(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Vanessa_Batiste_Laurent(Daughter_of_Lionel_Batiste)> .
 
-"Corinne Batiste" ns1:birthDate "abt 1914" ;
-    ns2:childOf "Irma Batiste",
-        "Walter Batiste" ;
-    ns2:siblingOf <https://www.wikidata.org/wiki/Q1341386>,
-        "Alma Batiste",
-        "Arthur Batiste",
-        "Fer(di)nand Batiste",
-        "Henry Batiste",
-        "Miriam Batiste",
-        "Norman Batiste" .
+<http://linkedjazz.org/resource/Malika_Batiste(Daughter_of_Lionel_Batiste)> ns1:childOf <https://www.wikidata.org/wiki/Q1341386> ;
+    ns1:siblingOf <http://linkedjazz.org/resource/Erica_Batiste(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Karen_Batiste_Williams(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Lionel_Paul_BatisteJr(Son_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Loretta_Batiste_Smith(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Tanya_Batiste(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Vanessa_Batiste_Laurent(Daughter_of_Lionel_Batiste)> .
 
-"Feliciana Mary Jolivette Batiste" ns1:birthDate "1906" ;
-    ns2:childOf "Joseph Charles Jolivette",
-        "Virginia Edwards" .
+<http://linkedjazz.org/resource/Marlene_Batiste(Sister_of_Milton_Batiste)> ns1:childOf <http://linkedjazz.org/resource/Milton_Batiste_Sr(Father_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Feliciana_Mary_Jolivette_Batiste(Mother_of_Milton_Batiste)> ;
+    ns1:siblingOf <http://id.loc.gov/authorities/names/no99007541>,
+        <http://linkedjazz.org/resource/Martha_Batiste(Sister_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Mary_Batiste(Sister_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Maurice_Scipio_Batiste(Brother_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Merial_Batiste(Sister_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Miriam_Batiste(Sister_of_Milton_Batiste)> .
 
-"Fer(di)nand Batiste" ns1:birthDate "abt 1917" ;
-    ns2:childOf "Irma Batiste",
-        "Walter Batiste" ;
-    ns2:siblingOf <https://www.wikidata.org/wiki/Q1341386>,
-        "Alma Batiste",
-        "Arthur Batiste",
-        "Corinne Batiste",
-        "Henry Batiste",
-        "Miriam Batiste",
-        "Norman Batiste" .
+<http://linkedjazz.org/resource/Martha_Batiste(Sister_of_Milton_Batiste)> ns1:childOf <http://linkedjazz.org/resource/Milton_Batiste_Sr(Father_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Feliciana_Mary_Jolivette_Batiste(Mother_of_Milton_Batiste)> ;
+    ns1:siblingOf <http://id.loc.gov/authorities/names/no99007541>,
+        <http://linkedjazz.org/resource/Marlene_Batiste(Sister_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Mary_Batiste(Sister_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Maurice_Scipio_Batiste(Brother_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Miriam_Batiste(Sister_of_Milton_Batiste)>,
+        "Merial Batiste" .
 
-"Henry Batiste" ns1:birthDate "abt 1920" ;
-    ns2:childOf "Irma Batiste",
-        "Walter Batiste" ;
-    ns2:siblingOf <https://www.wikidata.org/wiki/Q1341386>,
-        "Alma Batiste",
-        "Arthur Batiste",
-        "Corinne Batiste",
-        "Fer(di)nand Batiste",
-        "Miriam Batiste",
-        "Norman Batiste" .
+<http://linkedjazz.org/resource/Mary_Batiste(Sister_of_Milton_Batiste)> ns1:childOf <http://linkedjazz.org/resource/Milton_Batiste_Sr(Father_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Feliciana_Mary_Jolivette_Batiste(Mother_of_Milton_Batiste)> ;
+    ns1:siblingOf <http://id.loc.gov/authorities/names/no99007541>,
+        <http://linkedjazz.org/resource/Marlene_Batiste(Sister_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Martha_Batiste(Sister_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Maurice_Scipio_Batiste(Brother_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Merial_Batiste(Sister_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Miriam_Batiste(Sister_of_Milton_Batiste)> .
 
-"Irma Batiste" ns1:birthDate "abt 1895" ;
-    ns2:parentOf <https://www.wikidata.org/wiki/Q1341386>,
-        "Alma Batiste",
-        "Arthur Batiste",
-        "Corinne Batiste",
-        "Fer(di)nand Batiste",
-        "Henry Batiste",
-        "Miriam Batiste",
-        "Norman Batiste" ;
-    ns2:spouseOf "Walter Batiste" .
+<http://linkedjazz.org/resource/Maurice_Scipio_Batiste(Brother_of_Milton_Batiste)> ns1:childOf <http://linkedjazz.org/resource/Milton_Batiste_Sr(Father_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Feliciana_Mary_Jolivette_Batiste(Mother_of_Milton_Batiste)> ;
+    ns1:siblingOf <http://id.loc.gov/authorities/names/no99007541>,
+        <http://linkedjazz.org/resource/Marlene_Batiste(Sister_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Martha_Batiste(Sister_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Mary_Batiste(Sister_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Merial_Batiste(Sister_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Miriam_Batiste(Sister_of_Milton_Batiste)> .
 
-"Norman Batiste" ns1:birthDate "abt 1930" ;
-    ns2:childOf "Irma Batiste",
-        "Walter Batiste" ;
-    ns2:siblingOf <https://www.wikidata.org/wiki/Q1341386>,
-        "Alma Batiste",
-        "Arthur Batiste",
-        "Corinne Batiste",
-        "Fer(di)nand Batiste",
-        "Henry Batiste",
-        "Miriam Batiste" .
+<http://linkedjazz.org/resource/Miriam_Batiste(Sister_of_Milton_Batiste)> ns1:childOf <http://linkedjazz.org/resource/Milton_Batiste_Sr(Father_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Feliciana_Mary_Jolivette_Batiste(Mother_of_Milton_Batiste)> ;
+    ns1:siblingOf <http://id.loc.gov/authorities/names/no99007541>,
+        <http://linkedjazz.org/resource/Marlene_Batiste(Sister_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Martha_Batiste(Sister_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Mary_Batiste(Sister_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Maurice_Scipio_Batiste(Brother_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Merial_Batiste(Sister_of_Milton_Batiste)> .
 
-"Milton Sr. Batiste" ns1:birthDate "1905-04-01" ;
-    ns2:childOf "Elizabeth Baptiste",
-        "Scipio Baptiste" ;
-    ns2:parentOf "Marlene Batiste",
-        "Martha Batiste",
-        "Mary Batiste",
-        "Maurice Scipio Batiste",
-        "Merial Batiste",
-        "Milton Joseph Jr. Batiste",
-        "Miriam Batiste" ;
-    ns2:siblingOf "Felicia Boykins" .
+<http://linkedjazz.org/resource/Tanya_Batiste(Daughter_of_Lionel_Batiste)> ns1:childOf <https://www.wikidata.org/wiki/Q1341386> ;
+    ns1:siblingOf <http://linkedjazz.org/resource/Erica_Batiste(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Karen_Batiste_Williams(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Lionel_Paul_BatisteJr(Son_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Loretta_Batiste_Smith(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Malika_Batiste(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Vanessa_Batiste_Laurent(Daughter_of_Lionel_Batiste)> .
 
-<https://www.wikidata.org/wiki/Q1341386> ns1:birthDate "1931-02-11" ;
-    ns1:deathDate "2012-07-08" ;
-    ns1:instrument "Bass Drum" ;
-    ns2:childOf "Irma Batiste",
-        "Walter Batiste" ;
-    ns2:parentOf "Erica Batiste",
-        "Karen B. Williams",
-        "Lionel Paul Jr. Batiste",
-        "Loretta B. Smith",
-        "Malika Batiste",
-        "Tanya Batiste",
-        "Vanessa B. Laurent" ;
-    ns2:siblingOf "Alma Batiste",
-        "Arthur Batiste",
-        "Corinne Batiste",
-        "Fer(di)nand Batiste",
-        "Henry Batiste",
-        "Miriam Batiste",
-        "Norman Batiste" .
+<http://linkedjazz.org/resource/Vanessa_Batiste_Laurent(Daughter_of_Lionel_Batiste)> ns1:childOf <https://www.wikidata.org/wiki/Q1341386> ;
+    ns1:siblingOf <http://linkedjazz.org/resource/Erica_Batiste(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Karen_Batiste_Williams(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Lionel_Paul_BatisteJr(Son_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Loretta_Batiste_Smith(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Malika_Batiste(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Tanya_Batiste(Daughter_of_Lionel_Batiste)> .
 
-"Miriam Batiste" ns1:birthDate "abt 1926" ;
-    ns2:childOf "Feliciana Mary Jolivette Batiste",
-        "Irma Batiste",
-        "Milton Sr. Batiste",
-        "Walter Batiste" ;
-    ns2:siblingOf <https://www.wikidata.org/wiki/Q1341386>,
-        "Alma Batiste",
-        "Arthur Batiste",
-        "Corinne Batiste",
-        "Fer(di)nand Batiste",
-        "Henry Batiste",
-        "Marlene Batiste",
-        "Martha Batiste",
-        "Mary Batiste",
-        "Maurice Scipio Batiste",
-        "Merial Batiste",
-        "Milton Joseph Jr. Batiste",
-        "Norman Batiste" .
+<https://www.discogs.com/artist/5191482-Michael-Batiste> ns3:primary_instrument "Bass Guitar" ;
+    ns1:childOf <http://linkedjazz.org/resource/Estella_Curtis_Batiste(Grandmother_of_Jon_Batiste)>,
+        <http://linkedjazz.org/resource/John_Jeffrey_Batiste(Grandfather_of_Jon_Batiste)> ;
+    ns1:parentOf <https://www.wikidata.org/wiki/Q6272528> ;
+    ns1:siblingOf <http://id.loc.gov/authorities/names/no2007086020>,
+        <http://id.loc.gov/authorities/names/no2011128050>,
+        <https://www.discogs.com/artist/1239283-Paul-Batiste>,
+        <https://www.discogs.com/artist/5191485-Peter-Batiste> .
+
+<http://id.loc.gov/authorities/names/no2011128050> ns3:primary_instrument "Keytar",
+        "Piano" ;
+    ns1:childOf <http://linkedjazz.org/resource/Estella_Curtis_Batiste(Grandmother_of_Jon_Batiste)>,
+        <http://linkedjazz.org/resource/John_Jeffrey_Batiste(Grandfather_of_Jon_Batiste)> ;
+    ns1:parentOf <http://id.loc.gov/authorities/names/no2009105135>,
+        "Damon Batiste" ;
+    ns1:siblingOf <http://id.loc.gov/authorities/names/no2007086020>,
+        <https://www.discogs.com/artist/1239283-Paul-Batiste>,
+        <https://www.discogs.com/artist/5191482-Michael-Batiste>,
+        <https://www.discogs.com/artist/5191485-Peter-Batiste> .
+
+<http://id.loc.gov/authorities/names/no99007541> ns3:primary_instrument "Trumpet" ;
+    ns1:childOf <http://linkedjazz.org/resource/Milton_Batiste_Sr(Father_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Feliciana_Mary_Jolivette_Batiste(Mother_of_Milton_Batiste)> ;
+    ns1:siblingOf <http://linkedjazz.org/resource/Marlene_Batiste(Sister_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Martha_Batiste(Sister_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Mary_Batiste(Sister_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Maurice_Scipio_Batiste(Brother_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Merial_Batiste(Sister_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Miriam_Batiste(Sister_of_Milton_Batiste)> ;
+    ns2:birthDate "1934-09-05" .
+
+<https://www.discogs.com/artist/5191485-Peter-Batiste> ns3:primary_instrument "Vocals" ;
+    ns1:childOf <http://linkedjazz.org/resource/Estella_Curtis_Batiste(Grandmother_of_Jon_Batiste)>,
+        <http://linkedjazz.org/resource/John_Jeffrey_Batiste(Grandfather_of_Jon_Batiste)> ;
+    ns1:siblingOf <http://id.loc.gov/authorities/names/no2007086020>,
+        <http://id.loc.gov/authorities/names/no2011128050>,
+        <https://www.discogs.com/artist/1239283-Paul-Batiste>,
+        <https://www.discogs.com/artist/5191482-Michael-Batiste> .
+
+<http://linkedjazz.org/resource/Alma_Batiste(Sister_of_Lionel_Batiste)> ns1:childOf <http://linkedjazz.org/resource/Irma_Batiste(Mother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Walter_Louis_Batiste(Father_of_Lionel_Batiste)> ;
+    ns1:siblingOf <http://linkedjazz.org/resource/Arthur_Batiste(Brother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Corinne_Batiste(Sister_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Fernand_Batiste(Brother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Henry_Batiste(Brother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Miriam_Batiste(Sister_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Norman_Batiste(Brother_of_Lionel_Batiste)>,
+        <https://www.wikidata.org/wiki/Q1341386> ;
+    ns2:birthDate "abt 1915" .
+
+<http://linkedjazz.org/resource/Arthur_Batiste(Brother_of_Lionel_Batiste)> ns1:siblingOf <http://linkedjazz.org/resource/Alma_Batiste(Sister_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Corinne_Batiste(Sister_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Fernand_Batiste(Brother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Henry_Batiste(Brother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Miriam_Batiste(Sister_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Norman_Batiste(Brother_of_Lionel_Batiste)> .
+
+<http://linkedjazz.org/resource/Corinne_Batiste(Sister_of_Lionel_Batiste)> ns1:childOf <http://linkedjazz.org/resource/Irma_Batiste(Mother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Walter_Louis_Batiste(Father_of_Lionel_Batiste)> ;
+    ns1:siblingOf <http://linkedjazz.org/resource/Alma_Batiste(Sister_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Arthur_Batiste(Brother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Fernand_Batiste(Brother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Henry_Batiste(Brother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Miriam_Batiste(Sister_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Norman_Batiste(Brother_of_Lionel_Batiste)>,
+        <https://www.wikidata.org/wiki/Q1341386> ;
+    ns2:birthDate "abt 1914" .
+
+<http://linkedjazz.org/resource/Feliciana_Mary_Jolivette_Batiste(Mother_of_Milton_Batiste)> ns1:childOf <http://linkedjazz.org/resource/Joseph_Charles_Jolivette(Grandfather_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Virginia_Edwards(Grandmother_of_Milton_Batiste)> ;
+    ns1:parentOf <http://id.loc.gov/authorities/names/no99007541> ;
+    ns1:spouseOf <http://linkedjazz.org/resource/Milton_Batiste_Sr(Father_of_Milton_Batiste)> ;
+    ns2:birthDate "1906" .
+
+<http://linkedjazz.org/resource/Fernand_Batiste(Brother_of_Lionel_Batiste)> ns1:childOf <http://linkedjazz.org/resource/Irma_Batiste(Mother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Walter_Louis_Batiste(Father_of_Lionel_Batiste)> ;
+    ns1:siblingOf <http://linkedjazz.org/resource/Alma_Batiste(Sister_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Arthur_Batiste(Brother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Corinne_Batiste(Sister_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Henry_Batiste(Brother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Miriam_Batiste(Sister_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Norman_Batiste(Brother_of_Lionel_Batiste)>,
+        <https://www.wikidata.org/wiki/Q1341386> ;
+    ns2:birthDate "abt 1917" .
+
+<http://linkedjazz.org/resource/Henry_Batiste(Brother_of_Lionel_Batiste)> ns1:childOf <http://linkedjazz.org/resource/Irma_Batiste(Mother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Walter_Louis_Batiste(Father_of_Lionel_Batiste)> ;
+    ns1:siblingOf <http://linkedjazz.org/resource/Alma_Batiste(Sister_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Arthur_Batiste(Brother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Corinne_Batiste(Sister_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Fernand_Batiste(Brother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Miriam_Batiste(Sister_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Norman_Batiste(Brother_of_Lionel_Batiste)>,
+        <https://www.wikidata.org/wiki/Q1341386> ;
+    ns2:birthDate "abt 1920" .
+
+<http://linkedjazz.org/resource/Irma_Batiste(Mother_of_Lionel_Batiste)> ns1:parentOf <http://linkedjazz.org/resource/Alma_Batiste(Sister_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Arthur_Batiste(Brother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Corinne_Batiste(Sister_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Fernand_Batiste(Brother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Henry_Batiste(Brother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Miriam_Batiste(Sister_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Norman_Batiste(Brother_of_Lionel_Batiste)>,
+        <https://www.wikidata.org/wiki/Q1341386> ;
+    ns1:spouseOf <http://linkedjazz.org/resource/Walter_Louis_Batiste(Father_of_Lionel_Batiste)> ;
+    ns2:birthDate "abt 1895" .
+
+<http://linkedjazz.org/resource/Miriam_Batiste(Sister_of_Lionel_Batiste)> ns1:childOf <http://linkedjazz.org/resource/Irma_Batiste(Mother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Walter_Louis_Batiste(Father_of_Lionel_Batiste)> ;
+    ns1:siblingOf <http://linkedjazz.org/resource/Alma_Batiste(Sister_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Arthur_Batiste(Brother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Corinne_Batiste(Sister_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Fernand_Batiste(Brother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Henry_Batiste(Brother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Norman_Batiste(Brother_of_Lionel_Batiste)>,
+        <https://www.wikidata.org/wiki/Q1341386> ;
+    ns2:birthDate "abt 1926" .
+
+<http://linkedjazz.org/resource/Norman_Batiste(Brother_of_Lionel_Batiste)> ns1:childOf <http://linkedjazz.org/resource/Irma_Batiste(Mother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Walter_Louis_Batiste(Father_of_Lionel_Batiste)> ;
+    ns1:siblingOf <http://linkedjazz.org/resource/Alma_Batiste(Sister_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Arthur_Batiste(Brother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Corinne_Batiste(Sister_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Fernand_Batiste(Brother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Henry_Batiste(Brother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Miriam_Batiste(Sister_of_Lionel_Batiste)>,
+        <https://www.wikidata.org/wiki/Q1341386> ;
+    ns2:birthDate "abt 1930" .
+
+<http://linkedjazz.org/resource/Walter_Louis_Batiste(Father_of_Lionel_Batiste)> ns1:parentOf <http://linkedjazz.org/resource/Alma_Batiste(Sister_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Arthur_Batiste(Brother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Corinne_Batiste(Sister_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Fernand_Batiste(Brother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Henry_Batiste(Brother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Miriam_Batiste(Sister_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Norman_Batiste(Brother_of_Lionel_Batiste)>,
+        <https://www.wikidata.org/wiki/Q1341386> ;
+    ns1:spouseOf <http://linkedjazz.org/resource/Irma_Batiste(Mother_of_Lionel_Batiste)> ;
+    ns2:birthDate "1889-09-17" .
+
+<http://linkedjazz.org/resource/Milton_Batiste_Sr(Father_of_Milton_Batiste)> ns1:childOf <http://linkedjazz.org/resource/Elizabeth_Baptiste(Grandmother_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Scipio_Baptiste(Grandfather_of_Milton_Batiste)> ;
+    ns1:parentOf <http://id.loc.gov/authorities/names/no99007541>,
+        <http://linkedjazz.org/resource/Marlene_Batiste(Sister_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Martha_Batiste(Sister_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Mary_Batiste(Sister_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Maurice_Scipio_Batiste(Brother_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Merial_Batiste(Sister_of_Milton_Batiste)>,
+        <http://linkedjazz.org/resource/Miriam_Batiste(Sister_of_Milton_Batiste)> ;
+    ns1:siblingOf <http://linkedjazz.org/resource/Felicia_Boykins(Aunt_of_Milton_Batiste)> ;
+    ns2:birthDate "1905-04-01" .
+
+<http://id.loc.gov/authorities/names/no2007086020> ns3:primary_instrument "Percussion (congas, djembe)" ;
+    ns1:childOf <http://linkedjazz.org/resource/Estella_Curtis_Batiste(Grandmother_of_Jon_Batiste)>,
+        <http://linkedjazz.org/resource/John_Jeffrey_Batiste(Grandfather_of_Jon_Batiste)> ;
+    ns1:parentOf <http://linkedjazz.org/resource/Damon_Batiste_Jr(Son_of_Damon_Batiste)>,
+        <http://linkedjazz.org/resource/Leileh_Marie_Batiste(Daughter_of_Damon_Batiste)>,
+        <http://linkedjazz.org/resource/Nala_Jean_Batiste(Daughter_of_Damon_Batiste)> ;
+    ns1:spouseOf <http://linkedjazz.org/resource/Johana_Batiste(Wife_of_Damon_Batiste)> ;
+    ns2:birthDate "abt 1969" .
+
+<https://www.wikidata.org/wiki/Q1341386> ns3:primary_instrument "Bass Drum" ;
+    ns1:childOf <http://linkedjazz.org/resource/Irma_Batiste(Mother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Walter_Louis_Batiste(Father_of_Lionel_Batiste)> ;
+    ns1:parentOf <http://linkedjazz.org/resource/Erica_Batiste(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Karen_Batiste_Williams(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Lionel_Paul_BatisteJr(Son_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Loretta_Batiste_Smith(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Malika_Batiste(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Tanya_Batiste(Daughter_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Vanessa_Batiste_Laurent(Daughter_of_Lionel_Batiste)> ;
+    ns1:siblingOf <http://linkedjazz.org/resource/Alma_Batiste(Sister_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Arthur_Batiste(Brother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Corinne_Batiste(Sister_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Fernand_Batiste(Brother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Henry_Batiste(Brother_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Miriam_Batiste(Sister_of_Lionel_Batiste)>,
+        <http://linkedjazz.org/resource/Norman_Batiste(Brother_of_Lionel_Batiste)> ;
+    ns2:birthDate "1931-02-11" ;
+    ns2:deathDate "2012-07-08" .
 
