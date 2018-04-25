@@ -2,6 +2,8 @@ import csv, re, json
 from rdflib.graph import Graph, URIRef, Literal
 import rdflib
 
+g = Graph()
+
 name_id_dict_list = []
 link_finder = re.compile('[^,]+')
 
@@ -35,9 +37,6 @@ grandson_of = URIRef("http://cedric.cnam.fr/isid/ontologies/files/PersonLink.htm
 
 performer_is = URIRef("http://purl.org/ontology/mo/performer")
 composer_is = URIRef("http://purl.org/ontology/mo/composer")
-
-
-g = Graph()
 
 
 with open("Batiste Information Resources - Genealogy Data.csv") as f:
@@ -80,12 +79,6 @@ with open("Batiste Information Resources - Genealogy Data.csv") as f:
         birthdate = row['Date of Birth']
         deathdate = row['Date of Death']
 
-        # if identifier != "":
-        #     print(label)
-        #     print(id)
-        #     print("\n")
-        # print(father_id)
-        # print(father_lbl)
 
         if identifier != "":
             identifier = URIRef(row['Personal Identifier 1'])
@@ -218,6 +211,7 @@ with open("Batiste Information Resources - Genealogy Data.csv") as f:
                 deathdate = Literal(deathdate)
                 g.add((label, date_of_death_is, deathdate))
 
+
 with open('musician_names_filtered.json') as musicians:
     disc_data = json.load(musicians)
 
@@ -225,6 +219,7 @@ with open('musician_names_filtered.json') as musicians:
         performers = recording['batiste performer']
         composers = recording['batiste composer']
         title = recording['title']
+
 
         for performer in performers:
             print(performer)
