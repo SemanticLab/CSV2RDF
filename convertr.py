@@ -37,13 +37,12 @@ performer_is = URIRef("http://purl.org/ontology/mo/performer")
 composer_is = URIRef("http://purl.org/ontology/mo/composer")
 
 
-
+g = Graph()
 
 
 with open("Batiste Information Resources - Genealogy Data.csv") as f:
-    g = Graph()
-    file = csv.DictReader(f)
 
+    file = csv.DictReader(f)
     for row in file:
         identifier = ""
         label = ""
@@ -219,69 +218,28 @@ with open("Batiste Information Resources - Genealogy Data.csv") as f:
                 deathdate = Literal(deathdate)
                 g.add((label, date_of_death_is, deathdate))
 
+with open('musician_names_filtered.json') as musicians:
+    disc_data = json.load(musicians)
 
+    for recording in disc_data:
+        performers = recording['batiste performer']
+        composers = recording['batiste composer']
+        title = recording['title']
 
+        for performer in performers:
+            print(performer)
+            if performer != "":
+                if 'http' not in performer:
+                    g.add((Literal(title), performer_is, Literal(performer)))
+                elif 'http' in performer:
+                    g.add((Literal(title), performer_is, URIRef(performer)))
 
-            # if mother_id != "":
-            #     g.add((identifier, son_of, mother_id))
-            # elif mother_id == "":
-            #     g.add((identifier, son_of, mother_lbl))
-            #
-            # if sibling_id != "":
-            #     g.add((identifier, sibling_of, sibling_id))
-            # elif sibling_id == "":
-            #     g.add((identifier, sibling_of, sibling_lbl))
-            #
-            # if child_id != "":
-            #     g.add((identifier, parent_of, child_id))
-            # elif child_id == "":
-            #     g.add((identifier, parent_of, child_lbl))
-            #
-            # if adopted_child_id != "":
-            #     g.add((identifier, parent_of, adopted_child_id))
-            # elif adopted_child_id == "":
-            #     g.add((identifier, parent_of, adopted_child_lbl))
-            #
-            # if spouse_id != "":
-            #     g.add((identifier, spouse_of, spouse_id))
-            # elif spouse_id == "":
-            #     g.add((identifier, spouse_of, spouse_lbl))
-            #
-            #
-            #
-            #
-            #
+        for composer in composers:
+            if composer != "":
+                if 'http' not in composer:
+                    g.add((Literal(title), composer_is, Literal(composer)))
+                elif 'http' in composer:
+                    g.add((Literal(title), composer_is, URIRef(composer)))
 
 
 g.serialize("test.rdf", format="turtle")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        #     identifier = re.findall(link_finder, ids)
-        #     identifier = id[0]
-        #     print(name)
-        #     print(id)
-        #     name_id_dict = {
-        #     'name': name,
-        #     'id': id}
-        #     name_id_dict_list.append(name_id_dict)
-        #     # print(name_id_dict)
-    # print(name_id_dict_list)
-    # # print(len(name_id_dict_list))
-
-    # for row in file:
-    #     name = row['Family Member First Name'] + " " + row['Family Member Last Name']
-    #
